@@ -1,0 +1,270 @@
+#include "qsimPrimaryGeneratorAction.hh"
+
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+
+#include <TFile.h>
+#include <TH2.h>
+#include <TTree.h>
+#include <TLeaf.h>
+#include "G4Event.hh"
+#include "G4ParticleGun.hh"
+#include "G4ParticleTable.hh"
+#include "G4ParticleDefinition.hh"
+#include "qsimIO.hh"
+#include "qsimEvent.hh"
+#include "qsimtypes.hh"
+#include "globals.hh"
+
+#include "CLHEP/Random/RandFlat.h"
+#include "CLHEP/Random/RandGauss.h"
+
+#include "G4SystemOfUnits.hh"
+
+
+bool qsimPrimaryGeneratorAction::Thetaspectrum(double Th) {
+	double test = CLHEP::RandFlat::shoot(0.0,1.0);
+
+	if ( fSourceMode == 1 || ((cos(Th)*cos(Th)) > test) )
+		return true;
+	else
+		return false;
+}
+
+
+//void qsimPrimaryGeneratorAction::SourceModeSet() {
+//	SourceModeSet(0); // point to the one below with default settings = 0. // should I just use default parameters?
+//}
+
+// allow user modifications of private member and functional modifiable definition of primary generator variables
+void qsimPrimaryGeneratorAction::SourceModeSet(G4int mode = 0) {
+	fSourceMode = mode;
+	// 0 is cosmic mode
+	// 1 is beam mode
+	// 2 is PREX mode
+	if (fSourceMode==0){
+		fXmin =  -5.0*cm;
+		fXmax =  5.*cm;
+
+		fYmin =  -5.*cm;
+		fYmax =  5.*cm;
+
+		fEmin = 10.0*MeV;
+		fEmax = 50.0*GeV;
+	
+		fthetaMin = 0.0*deg;
+		fthetaMax = 90.0*deg;
+	}
+	else if (fSourceMode==1) {
+		fXmin =  0*mm;//-245.2*mm/2; // pinpoint at Mainz
+		fXmax =  0*mm;//245.2*mm/2; // questionable at JLab
+
+		fYmin =  -123.0*mm;
+		fYmax =  123.0*mm;
+
+		fEmin = 855.0*MeV; // = 250 MeV at Mainz
+		fEmax = 855.0*MeV; // = 1.063 Gev for JLab
+	
+		fthetaMin = 0.0*deg;
+		fthetaMax = 0.0*deg;
+	}
+	else if (fSourceMode==2){
+		
+		fEmin = 1.063*GeV; 
+		fEmax = 1.063*GeV; 
+
+	}
+	
+
+
+}
+
+qsimPrimaryGeneratorAction::qsimPrimaryGeneratorAction() {
+  G4int n_particle = 1;
+
+	SourceModeSet(); // Accelerator beam mode, default set to 0, setting the mode to cosmic stand mode.
+	
+  fParticleGun = new G4ParticleGun(n_particle);
+  fDefaultEvent = new qsimEvent();
+
+	fZ = -0.52*m;
+}
+
+
+qsimPrimaryGeneratorAction::~qsimPrimaryGeneratorAction() {
+  delete fParticleGun;
+  delete fDefaultEvent;
+}
+
+
+bool qsimPrimaryGeneratorAction::pspectrum(double p) {
+	double test = CLHEP::RandFlat::shoot(0.0,1.0) ;
+        //discrete probability distribution for open region 
+        double dpd_open[69] = {0.00903402, 0.0185528, 0.0495769, 0.0961132, 0.13789, 0.171294, 
+			       0.195135, 0.218976, 0.235722, 0.25, 0.255949, 0.266658, 0.270227, 
+                               0.271417, 0.265336, 0.265336, 0.260576, 0.255773, 0.256919, 
+                               0.250925, 0.252115, 0.252071, 0.256831, 0.256787, 0.261546, 0.265115, 
+                               0.274634, 0.279394, 0.291292, 0.309184, 0.325886, 0.347347, 0.372378, 
+                               0.399833, 0.432047, 0.461881, 0.500044, 0.543011, 0.584788, 0.639697, 
+                               0.698176, 0.759034, 0.80676, 0.84012, 0.873612, 0.912965, 0.943989, 
+                               0.972634, 0.997664, 1., 0.994051, 0.959413, 0.878151, 0.585581, 
+                               0.296624, 0.203464, 0.160453, 0.134144, 0.110259, 0.0898995, 0.0767671, 
+                               0.0588313, 0.0456549, 0.0300987, 0.0217257, 0.0204918, 0.0144985, 
+                               0.00731535, 0.00132884};
+        //momentum values in units of GeV/c
+        double ps[69] = {2.0056*GeV, 2.09473*GeV, 2.20121*GeV, 2.30149*GeV, 2.38981*GeV, 2.5133*GeV, 2.62493*GeV, 
+                         2.70109*GeV, 2.81235*GeV, 2.906*GeV, 3.023*GeV, 3.11646*GeV, 3.23324*GeV, 3.34405*GeV, 3.53633*GeV, 
+                         3.61209*GeV, 3.72264*GeV, 3.83323*GeV, 3.92038*GeV, 4.02503*GeV, 4.1238*GeV, 4.21094*GeV, 
+                         4.33864*GeV, 4.42572*GeV, 4.52426*GeV, 4.63433*GeV, 4.74458*GeV, 4.8373*GeV, 4.94166*GeV, 
+                         5.05163*GeV, 5.13273*GeV, 5.24266*GeV, 5.34684*GeV, 5.4509*GeV, 5.56067*GeV, 5.65325*GeV, 
+                         5.72835*GeV, 5.86126*GeV, 5.94206*GeV, 6.04022*GeV, 6.1499*GeV, 6.23639*GeV, 6.34605*GeV, 
+                         6.46161*GeV, 6.54818*GeV, 6.63473*GeV, 6.73874*GeV, 6.83691*GeV, 6.94661*GeV, 7.06222*GeV, 
+                         7.13731*GeV, 7.2531*GeV, 7.35164*GeV, 7.4626*GeV, 7.5504*GeV, 7.66065*GeV, 7.75896*GeV, 7.84004*GeV, 
+                         7.94986*GeV, 8.05387*GeV, 8.15217*GeV, 8.26198*GeV, 8.35445*GeV, 8.4352*GeV, 8.56243*GeV, 8.6606*GeV, 
+                         8.75877*GeV, 8.86855*GeV, 8.94939*GeV};
+        //linear interporlation to sample  energies with the distribution represented by the arrays above 
+        double prob_for_p = 0;
+        if ( fSourceMode == 1 ){
+           for ( int i = 0; i < 69; i++ ){
+               if (ps[i] <= p && p  <= ps[i+1]){
+                  double c = ( dpd_open[i+1] - dpd_open[i] ) / ( ps[i+1] - ps[i] );
+                  double b = dpd_open[i] - c*ps[i];
+                  prob_for_p = c*p + b;
+               }
+           }
+        }
+
+
+	// Muon energy spctrum obtained from and fit to PDG data for 0 degree incident angle
+	// good to 25% out to 36C GeV.
+	// if the accelerator mode is on then just return true anyway.
+        if ( fSourceMode==1 && prob_for_p > test ) {
+           //G4cout << prob_for_p << "   " << test << G4endl;
+           return true;
+        } else if ( fSourceMode == 2 ) {
+           return true;
+        } else if  (fSourceMode == 0 && (((pow(p/GeV,-2.7)*(exp(-0.7324*(pow(log(p/GeV),2))+4.7099*log(p/GeV)-1.5)))/0.885967) > test) ){
+           return true;
+        } else {
+           return false;
+        }  
+	//if ( fSourceMode==1 || fSourceMode == 2 || (((pow(p/GeV,-2.7)*(exp(-0.7324*(pow(log(p/GeV),2))+4.7099*log(p/GeV)-1.5)))/0.885967) > test) ) 
+
+	//	return true;
+
+	//else
+	//	return false;
+}
+
+
+void qsimPrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent) {
+
+    /*  Generate event, set IO data */
+
+    // Use default, static single generator
+    // Update this just in case things changed
+    // from the command user interface
+    fDefaultEvent->Reset();
+
+    // Set data //////////////////////////////////
+    // Magic happens here
+
+	
+	double xPos, yPos, zPos;	
+
+	if( fSourceMode == 0 || fSourceMode == 1) {
+	    xPos = CLHEP::RandFlat::shoot( fXmin, fXmax );
+	    yPos = CLHEP::RandFlat::shoot( fYmin, fYmax );
+	}
+	
+	zPos = fZ;
+
+
+// begin changed stuff to generate probability distribution of energies as expected
+		bool good_p = false;
+		double p3sq, E;
+		double mass = fParticleGun->GetParticleDefinition()->GetPDGMass();
+
+		while ( good_p == false ) {
+			E = CLHEP::RandFlat::shoot( fEmin, fEmax );
+                        p3sq = E*E - mass*mass;
+                        if( p3sq < 0 ) continue;
+
+			good_p = pspectrum(sqrt(p3sq));
+		}
+
+
+	// fTheta needs to be a random distribution determined by the cos^2(theta) distribution	
+	
+	
+	double p = sqrt( E*E - mass*mass );
+	double pX, pY, pZ;
+	double randTheta, randPhi;
+	double tanth, tanph;
+	
+	if (fSourceMode == 0 || fSourceMode == 1) {
+		bool goodTheta = false;
+		while ( goodTheta == false ) {
+			randTheta = CLHEP::RandFlat::shoot( fthetaMin, fthetaMax );
+			goodTheta = Thetaspectrum(randTheta);
+		}
+		
+		randPhi = CLHEP::RandFlat::shoot( 0.0,360.0)*deg ;
+    
+    		pX = sin(randTheta)*cos(randPhi)*p;
+   		pY = sin(randTheta)*sin(randPhi)*p;
+    		pZ = cos(randTheta)*p;
+	}
+
+	if (fSourceMode == 2) {
+		int chosenEvent;
+		TFile *primaryFile = new TFile("primaryDistribution.root");
+		TTree *T = (TTree*)primaryFile->Get("T");
+		chosenEvent = rand() % T->GetEntries();
+		T->GetEntry(chosenEvent);		
+		xPos = T->GetLeaf("x")->GetValue()*m;
+		yPos = T->GetLeaf("y")->GetValue()*m;
+		tanth = T->GetLeaf("theta")->GetValue();		
+		tanph = T->GetLeaf("phi")->GetValue();		
+		primaryFile->Close();
+		pZ = sqrt(p/(1. + tanth*tanth + tanph*tanph));
+		pX = pZ*tanth;
+		pY = pZ*tanph;	
+			
+	}
+
+    
+    assert( E > 0.0 );
+    assert( E > mass );
+
+    fDefaultEvent->ProduceNewParticle(
+	    G4ThreeVector(xPos, yPos, zPos),
+	    G4ThreeVector(pX, pY, pZ ),
+	    fParticleGun->GetParticleDefinition()->GetParticleName() );
+
+    /////////////////////////////////////////////////////////////
+    // Register and create event
+    //
+    
+    double kinE = sqrt(fDefaultEvent->fPartMom[0].mag()*fDefaultEvent->fPartMom[0].mag()
+	    + fDefaultEvent->fPartType[0]->GetPDGMass()*fDefaultEvent->fPartType[0]->GetPDGMass() )
+	-  fDefaultEvent->fPartType[0]->GetPDGMass();
+
+    fParticleGun->SetParticleDefinition(fDefaultEvent->fPartType[0]);
+    fParticleGun->SetParticleMomentumDirection(fDefaultEvent->fPartMom[0].unit());
+    fParticleGun->SetParticleEnergy( kinE  );
+    fParticleGun->SetParticlePosition( fDefaultEvent->fPartPos[0] );
+
+
+    fIO->SetEventData(fDefaultEvent);
+    fParticleGun->GeneratePrimaryVertex(anEvent);
+
+}
+
+G4ParticleGun* qsimPrimaryGeneratorAction::GetParticleGun() {
+  return fParticleGun;
+} 
+
+
