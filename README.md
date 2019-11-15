@@ -2,6 +2,10 @@
 
 This is the modified qsim-master directory, with changes made to suit the SLAC test beam data
 
+Justin Gahley
+gahljust@isu.edu
+November 14, 2019
+
 qsim installation and running instructions
 
 Seamus Riordan
