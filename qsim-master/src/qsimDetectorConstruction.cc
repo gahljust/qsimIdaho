@@ -519,11 +519,6 @@ G4double Reflectivity_laterals[nEntries];// = {0.7612, 0.7621, 0.764, 0.764, 0.7
          rotQ_c1->rotateZ(0.*deg);
          rotQ_c1->rotateX(180.*deg);
 
-          G4VPhysicalVolume* quartz_phys_c1 // REPLACES lines 408-425 (THIS IS NEW)
-          = new G4PVPlacement(rotQ_c1,G4ThreeVector(0,0,quartz_zPos-2*quartz_z-8*mm),quartz_log,"Quartz2", det_log,false,0);
-
-
-
         }
 
         if (fConfMode == 2){ //2 stack
