@@ -208,7 +208,7 @@ void qsimIO::AddDetectorHit(qsimDetectorHit *hit){
     fDetHit_E[n]  = hit->fE/__E_UNIT;
     fDetHit_M[n]  = hit->fM/__E_UNIT;
 
-    //if (1.24E-6/(hit->fE/__E_UNIT)>=280) {
+    //if (1.24E-6/(hit->fE/__E_UNIT)>=0) {
     fNDetHit++;
     //}    
 

@@ -1,0 +1,51 @@
+[Appearance]
+BackgroundColor=160,160,164
+BackgroundMode=1
+BackgroundPixmap=
+
+[Grid]
+CheckerboardColor1=255,255,255
+CheckerboardColor2=127,127,127
+CheckerboardSize=Medium
+GridScaling=10
+PasteTransparent=false
+ShowGrid=true
+ShowRulers=true
+TransparencyDisplayType=Checkerboard
+TransparencySolidColor=255,255,255
+
+[MainWindowSettings]
+Height 1024=540
+Height 1050=540
+Height 768=540
+Width 1280=600
+Width 1366=600
+Width 1680=600
+
+[MainWindowSettings Toolbar mainToolBar]
+Index=0
+
+[MainWindowSettings Toolbar paletteToolBar]
+IconText=IconOnly
+Index=0
+NewLine=true
+Offset=-1
+Position=Right
+
+[MainWindowSettings Toolbar toolsToolBar]
+IconText=IconOnly
+Index=0
+
+[RecentFiles]
+File1=$HOME/solid/data/plots/dataVsSim/dataVsSim_726_DetTheta_0deg_polish_096_PMT_Tyler_gainC_096.png
+File2=$HOME/solid/data/plots/dataVsSim/dataVsSim_723_DetTheta_0deg_polish_098_PMT_Tyler_gain_12.png
+File3=$HOME/solid/data/plots/dataVsSim/dataVsSim_723_DetTheta_0deg_polish_0975_PMT_Tyler_gain_11.png
+File4=$HOME/solid/qsim/build/scene_01.png.png
+File5=$HOME/solid/11-05-2013/build/pictures/geometry_Quartz.png
+File6=$HOME/REMOLL/02-07-2013/remoll/analysis/plots/hit_r_1E3_detector_plane_2750mm.png
+Name1=dataVsSim_726_DetTheta_0deg_polish_096_PMT_Tyler_gainC_096.png
+Name2=dataVsSim_723_DetTheta_0deg_polish_098_PMT_Tyler_gain_12.png
+Name3=dataVsSim_723_DetTheta_0deg_polish_0975_PMT_Tyler_gain_11.png
+Name4=scene_01.png.png
+Name5=geometry_Quartz.png
+Name6=hit_r_1E3_detector_plane_2750mm.png

@@ -41,7 +41,7 @@ bool qsimPrimaryGeneratorAction::Thetaspectrum(double Th) {
 //}
 
 // allow user modifications of private member and functional modifiable definition of primary generator variables
-void qsimPrimaryGeneratorAction::SourceModeSet(G4int mode = 0) {
+void qsimPrimaryGeneratorAction::SourceModeSet(G4int mode = 1) {
 	fSourceMode = mode;
 	// 0 is cosmic mode
 	// 1 is beam mode
@@ -63,8 +63,8 @@ void qsimPrimaryGeneratorAction::SourceModeSet(G4int mode = 0) {
 		fXmin =  0.0*cm;//-0.05*cm-0.1*mm-(53/4)*mm+10*mm;//-245.2*mm/2; // pinpoint at Mainz
 		fXmax =  0.0*cm;//-0.05*cm-0.1*mm-(53/4)*mm+10*mm;//245.2*mm/2; // questionable at JLab
 
-		fYmin =  0.0*cm;//-123.0*mm;
-		fYmax =  0.0*cm;//123.0*mm;
+		fYmin =  0.0*mm;//-123.0*mm;
+		fYmax =  0.0*mm;//123.0*mm;
 
 		fEmin = 855.0*MeV; // = 855 MeV at Mainz
 		fEmax = 855.0*MeV; // = 1.063 Gev for JLab
@@ -74,8 +74,8 @@ void qsimPrimaryGeneratorAction::SourceModeSet(G4int mode = 0) {
 	}
 	else if (fSourceMode==2){
 
-		fEmin = 5.5*GeV;//1.063
-		fEmax = 5.5*GeV;
+		fEmin = 1.063*GeV;
+		fEmax = 1.063*GeV;
 
 	}
 
@@ -167,7 +167,7 @@ void qsimPrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent) {
 			goodTheta = Thetaspectrum(randTheta);
 		}
 
-		randPhi = CLHEP::RandFlat::shoot( 0.0,360.0)*deg ;
+		randPhi = CLHEP::RandFlat::shoot( 0.0, 360.0)*deg ;
 
     		pX = sin(randTheta)*cos(randPhi)*p;
    		pY = sin(randTheta)*sin(randPhi)*p;
@@ -237,6 +237,12 @@ void qsimPrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent) {
     double two_pe = 0.0933;
     double three_pe = 0.0269;
     double four_pe = 0.0065;*/
+    //run 343 344 345 346 Benchmarking 1A
+    //double zero_pe = 0.56;
+    //double one_pe = 0.29;
+    //double two_pe = 0.11;
+    //double three_pe = 0.03;
+    //double four_pe = 0.01;
     //run 418 6mm
     /*double zero_pe = 0.2264;
     double one_pe = 0.3160;

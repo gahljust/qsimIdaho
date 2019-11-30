@@ -62,13 +62,13 @@ qsimMessenger::qsimMessenger(){
 		fSourceModeCmd->SetGuidance("Set fSourceMode to an option");
 		fSourceModeCmd->SetParameterName("sourcemode", false);
 
-		fQuartzPolishCmd = new G4UIcmdWithADouble("/qsim/fQuartzPolish",this);
-		fQuartzPolishCmd->SetGuidance("Set fQuartzPolish to a value");
-		fQuartzPolishCmd->SetParameterName("quartzpolish",false);
-
     fConfModeCmd = new G4UIcmdWithAnInteger("/qsim/fConfMode",this); //Newly added
 		fConfModeCmd->SetGuidance("Set fConfMode to an option");
 		fConfModeCmd->SetParameterName("confmode", false);
+
+		fQuartzPolishCmd = new G4UIcmdWithADouble("/qsim/fQuartzPolish",this);
+		fQuartzPolishCmd->SetGuidance("Set fQuartzPolish to a value");
+		fQuartzPolishCmd->SetParameterName("quartzpolish",false);
 
 		fDetAngleCmd = new G4UIcmdWithADoubleAndUnit("/qsim/fDetAngle",this);
 		fDetAngleCmd->SetGuidance("Set fDetAngle to a value");
@@ -172,10 +172,10 @@ void qsimMessenger::SetNewValue(G4UIcommand* cmd, G4String newValue){
 	fprigen->SourceModeSet(x);
 		}
 
-  if (cmd == fConfModeCmd ) {
-  	G4double x = fConfModeCmd->GetNewIntValue(newValue);   //Newly Added
-  	fdetcon->ConfModeSet(x);
-  }
+    if (cmd == fConfModeCmd ) {
+    	G4double x = fConfModeCmd->GetNewIntValue(newValue);   //Newly Added
+    	fdetcon->ConfModeSet(x);
+    }
 
 	if (cmd == fQuartzPolishCmd ) {
 		G4double x = fQuartzPolishCmd->GetNewDoubleValue(newValue);

@@ -16,7 +16,7 @@ class TTree;
 class qsimDetectorHit;
 class qsimScintDetectorHit;
 
-#define __IO_MAXHIT 10000
+#define __IO_MAXHIT 20000
 #define __FILENAMELEN 255
 
 // Units for output

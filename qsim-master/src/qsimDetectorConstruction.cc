@@ -26,9 +26,6 @@
 #include "G4UserLimits.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-//Line 494 Quarts and Tungsten
-
-
 
 void qsimDetectorConstruction::DetModeSet(G4int detMode = 3) {
 
@@ -70,6 +67,7 @@ void qsimDetectorConstruction::ConfModeSet(G4int confMode = 0) {
 
 }
 
+
 qsimDetectorConstruction::qsimDetectorConstruction() {
 
     DetModeSet();
@@ -94,8 +92,8 @@ qsimDetectorConstruction::qsimDetectorConstruction() {
     //Half cm
     //quartz_z = 0.3*cm;
     //One cm
-    quartz_z = 0.3*cm;//downstream
-    quartz2_z = 0.5*cm;//upstream
+    quartz_z = 0.5*cm;//downstream
+    quartz2_z = 0.3*cm;//upstream
     }
 
     if(fQMode == 1){
@@ -112,9 +110,9 @@ qsimDetectorConstruction::qsimDetectorConstruction() {
         //quartz_x = 246*mm/2; // replaces lines 90-93
 	quartz_x = 25.40*mm/2; //benchmarck
 	quartz2_x = 1.75*cm;
-        quartz_y = 117.5*mm/2; // 117.5 (open) ---> 152.5 (close)
-	//Change quartz thickness here.
+        quartz_y = 80.5*mm/2;//117.5*mm/2; // 117.5 (open) ---> 152.5 (close)
 	quartz2_y = 7.5*cm;
+        //Change quartz thickness here.
         quartz_z = 10.0*mm/2; // REPLACE END
 	quartz2_z = 0.5*cm;
     }
@@ -208,7 +206,7 @@ G4VPhysicalVolume* qsimDetectorConstruction::Construct() {
 
     // Define optical property tables
 
-    const G4int nEntries = 49;//49 R7723Q -actualized //47 9305QKFL//205 all - old//101 280nm cut off//75 320nm cut off
+    const G4int nEntries = 47;//49 R7723Q -actualized //47 9305QKFL//205 all - old//101 280nm cut off//75 320nm cut off
 
     // Array of photon energies for R7723Q and R375
     /*G4double PhotonEnergy[nEntries] =
@@ -235,11 +233,11 @@ G4VPhysicalVolume* qsimDetectorConstruction::Construct() {
         7.08,7.20,7.32,7.44,7.56,7.69//161nm
     };*/
 
-    // Array of photon energies for 9305QKFL (97 entries)
-    //G4double PhotonEnergy[nEntries] = {1.88, 1.91, 1.94, 1.97, 2.00, 2.03, 2.07, 2.10, 2.14, 2.18, 2.21, 2.25, 2.30, 2.34, 2.38, 2.43, 2.48, 2.53, 2.58, 2.64, 2.70, 2.76, 2.82, 2.88, 2.95, 3.02, 3.10, 3.18, 3.26, 3.35, 3.44, 3.54, 3.65, 3.76, 3.87, 4.00, 4.13, 4.28, 4.43, 4.59, 4.77, 4.96, 5.17, 5.39, 5.64, 5.90, 6.20};
+    // Array of photon energies for 9305QKFL (47 entries)
+    G4double PhotonEnergy[nEntries] = {1.88, 1.91, 1.94, 1.97, 2.00, 2.03, 2.07, 2.10, 2.14, 2.18, 2.21, 2.25, 2.30, 2.34, 2.38, 2.43, 2.48, 2.53, 2.58, 2.64, 2.70, 2.76, 2.82, 2.88, 2.95, 3.02, 3.10, 3.18, 3.26, 3.35, 3.44, 3.54, 3.65, 3.76, 3.87, 4.00, 4.13, 4.28, 4.43, 4.59, 4.77, 4.96, 5.17, 5.39, 5.64, 5.90, 6.20};
 
     //Array of photon energies for R7723Q - actualized (49 entries)
-    G4double PhotonEnergy[nEntries] = {1.8233, 1.85051, 1.87855, 1.90745, 1.93725, 1.968, 1.99975, 2.03253, 2.0664, 2.10143, 2.13766, 2.17516, 2.214, 2.25426, 2.296, 2.33932, 2.38431, 2.43106, 2.47968, 2.53029, 2.583, 2.63796, 2.69531, 2.7552, 2.81782, 2.88335, 2.952, 3.024, 3.09961, 3.17908, 3.26274, 3.35092, 3.44401, 3.54241, 3.64659, 3.7571, 3.87451, 3.99949, 4.13281, 4.27532, 4.42801, 4.59201, 4.76862, 4.95937, 5.16601, 5.39062, 5.63565, 5.90401, 6.19921};
+    //G4double PhotonEnergy[nEntries] = {1.8233, 1.85051, 1.87855, 1.90745, 1.93725, 1.968, 1.99975, 2.03253, 2.0664, 2.10143, 2.13766, 2.17516, 2.214, 2.25426, 2.296, 2.33932, 2.38431, 2.43106, 2.47968, 2.53029, 2.583, 2.63796, 2.69531, 2.7552, 2.81782, 2.88335, 2.952, 3.024, 3.09961, 3.17908, 3.26274, 3.35092, 3.44401, 3.54241, 3.64659, 3.7571, 3.87451, 3.99949, 4.13281, 4.27532, 4.42801, 4.59201, 4.76862, 4.95937, 5.16601, 5.39062, 5.63565, 5.90401, 6.19921};
 
     // Cathode quantum efficiency
     // Response obtained from the plot of the quantum efficiency as a function of wavelength and then changed to eV for the Bialkali photocathode (synthetic silica)
@@ -301,13 +299,13 @@ G4VPhysicalVolume* qsimDetectorConstruction::Construct() {
      13.5975, 13.0396, 13.0396, 13.0396, 13.0396};*/
 
         //9305QKFL
-        //G4double EfficiencyArrayPercent[nEntries] = {0.0107, 0.0777, 0.172, 0.354, 0.653, 1.10, 1.70, 2.39, 3.23, 4.08, 5.09, 6.10, 7.47, 9.71, 12.7, 15.4, 16.4, 17.4, 18.4, 19.8, 21.4, 23.1, 24.7, 25.9, 27.1, 27.6, 28.3, 29.1, 29.1, 28.8, 30.6, 30.9, 31.2, 30.8, 31.3, 30.4, 30.9, 29.8, 28.7, 27.2, 25.7, 25.4, 25.8, 27.3, 29.0, 32.0, 38.8};
+        G4double EfficiencyArrayPercent[nEntries] = {0.0107, 0.0777, 0.172, 0.354, 0.653, 1.10, 1.70, 2.39, 3.23, 4.08, 5.09, 6.10, 7.47, 9.71, 12.7, 15.4, 16.4, 17.4, 18.4, 19.8, 21.4, 23.1, 24.7, 25.9, 27.1, 27.6, 28.3, 29.1, 29.1, 28.8, 30.6, 30.9, 31.2, 30.8, 31.3, 30.4, 30.9, 29.8, 28.7, 27.2, 25.7, 25.4, 25.8, 27.3, 29.0, 32.0, 38.8};
 
     //R7723Q - actualized
-    G4double EfficiencyArrayPercent[nEntries] = {0, 0.1, 0.2, 0.3, 0.6, 0.9, 1.4, 2, 2.7, 3.4, 4.2, 5, 5.8, 6.7, 7.7, 9.3, 12, 14.6, 15.9, 16.5, 17.4, 18.3, 19.7, 20.9, 21.8, 22.5, 23.1, 23.6, 24, 24.2, 24.4, 24.2, 24.1, 24.3, 24.4, 24.3, 24.1, 23.7, 22.9, 21.7, 20.1, 18.3, 17.2, 16.7, 15.8, 15, 15.1, 15.4, 16.2};
+    //G4double EfficiencyArrayPercent[nEntries] = {0, 0.1, 0.2, 0.3, 0.6, 0.9, 1.4, 2, 2.7, 3.4, 4.2, 5, 5.8, 6.7, 7.7, 9.3, 12, 14.6, 15.9, 16.5, 17.4, 18.3, 19.7, 20.9, 21.8, 22.5, 23.1, 23.6, 24, 24.2, 24.4, 24.2, 24.1, 24.3, 24.4, 24.3, 24.1, 23.7, 22.9, 21.7, 20.1, 18.3, 17.2, 16.7, 15.8, 15, 15.1, 15.4, 16.2};
 
     //KCsBs Cathode reflectivity
-    G4double CathodeReflectivity[nEntries] = {19.9068, 19.9606, 20.1601, 20.2915, 20.5281, 20.8154, 21.0835, 21.4784, 21.886, 22.4168, 23.043, 23.7001, 24.448, 25.1821, 25.7158, 25.1727, 22.9509, 20.9488, 20.5015, 20.8426, 21.4012, 21.7948, 21.2349, 19.832, 19.0381, 18.6857, 18.4112, 17.8851, 17.1713, 16.3226, 15.532, 14.964, 14.5585, 14.1401, 13.9015, 13.44, 12.526, 10.4672, 7.63344, 5.23522, 4.54473, 4.57344, 4.65438, 4.7869, 5.10269, 5.78094, 7.08912, 9.42469, 13.3784};
+    //G4double CathodeReflectivity[nEntries] = {19.9068, 19.9606, 20.1601, 20.2915, 20.5281, 20.8154, 21.0835, 21.4784, 21.886, 22.4168, 23.043, 23.7001, 24.448, 25.1821, 25.7158, 25.1727, 22.9509, 20.9488, 20.5015, 20.8426, 21.4012, 21.7948, 21.2349, 19.832, 19.0381, 18.6857, 18.4112, 17.8851, 17.1713, 16.3226, 15.532, 14.964, 14.5585, 14.1401, 13.9015, 13.44, 12.526, 10.4672, 7.63344, 5.23522, 4.54473, 4.57344, 4.65438, 4.7869, 5.10269, 5.78094, 7.08912, 9.42469, 13.3784};
 
     G4double EfficiencyArray[nEntries];
 
@@ -335,7 +333,7 @@ G4double Reflectivity_laterals[nEntries];// = {0.7612, 0.7621, 0.764, 0.764, 0.7
 
         // *** need to update this
         //if (PhotonEnergy[i] < 4.135*eV) {
-	Reflectivity1[i] = 0.8;//0.9825;
+	Reflectivity1[i] = 0.1;//Wrapping Reflectivity: 0.8 Mylar, 0.1 Kapton;
         if (PhotonEnergy[i] < 3.53*eV) {
         //if (PhotonEnergy[i] < 3.93*eV) {
 	  //Reflectivity1[i] = 0.9825;// 0.625;
@@ -472,6 +470,7 @@ G4double Reflectivity_laterals[nEntries];// = {0.7612, 0.7621, 0.764, 0.764, 0.7
 
     rotQ->rotateX(M_PI/2.*rad);
     rotQ->rotateZ(0.*deg);
+
     if(fDetMode == 0) {
         rotQ->rotateZ(M_PI*rad);
     }
@@ -486,7 +485,6 @@ G4double Reflectivity_laterals[nEntries];// = {0.7612, 0.7621, 0.764, 0.764, 0.7
 
     G4VPhysicalVolume* quartz2_phys
     = new G4PVPlacement(rotQ2,G4ThreeVector(0,0,quartz_zPos),quartz_log2,"Quartz2",det_log_c1,false,0);
-
 
  // TUNGSTEN DIMENSIONS ===================================================================================================================================================
          Wthickness = 8*mm/2-0.01*mm/2; // REPLACES LINE 374 (this is new)
@@ -621,20 +619,17 @@ G4double Reflectivity_laterals[nEntries];// = {0.7612, 0.7621, 0.764, 0.764, 0.7
              = new G4PVPlacement(rotQ_c3,G4ThreeVector(0,0,quartz_zPos-6*quartz_z-3*8*mm),quartz_log,"Quartz", det_log,false,0);
 
            }
-
-
-
-     //===============================
+           //===============================
 
 
 
 
 
 
- // REPLACE END
-//======================================================================================================================================================================
+       // REPLACE END
+      //======================================================================================================================================================================
 
-    }
+         }
 
     // Light guide and tube mirror (only for PREX-I design)
 
@@ -881,8 +876,13 @@ G4double Reflectivity_laterals[nEntries];// = {0.7612, 0.7621, 0.764, 0.764, 0.7
 
     G4Tubs* pmt = new G4Tubs("PMT",prin,prout,plngth,anini,anspan);
 
+    G4Tubs* filter = new G4Tubs("PMT",prin,prout,3*mm/2,anini,anspan);//filter for Mainz data
+
     G4LogicalVolume* pmt_log
     = new G4LogicalVolume(pmt,Quartz,"PMT",0,0,0);
+
+    G4LogicalVolume* filter_log
+    = new G4LogicalVolume(filter,Quartz,"PMT",0,0,0);
 
     G4String DetSDname = "tracker1";
 
@@ -905,8 +905,9 @@ G4double Reflectivity_laterals[nEntries];// = {0.7612, 0.7621, 0.764, 0.764, 0.7
 
     SDman->AddNewDetector(cathSD);
 
-    cath_log->SetSensitiveDetector(cathSD);
-    //cath_log_c1->SetSensitiveDetector(cathSD);//6mm tandem quartz
+    //can't define two cathodes at same time.
+    cath_log->SetSensitiveDetector(cathSD);//placed downstream, 10mm tandem quartz
+    //cath_log_c1->SetSensitiveDetector(cathSD);//placed upstream, 6mm tandem quartz
 
     G4VisAttributes *cathatt = new G4VisAttributes();
     cathatt->SetColour(1.0, 1.0, 0.2);
@@ -1041,7 +1042,6 @@ G4double Reflectivity_laterals[nEntries];// = {0.7612, 0.7621, 0.764, 0.764, 0.7
     }
 
     if (fDetMode == 1) {
-
         detrot->rotateY(fDetAngle);
         rot_pmt -> rotateY(M_PI/4.*rad);
 
@@ -1411,8 +1411,8 @@ G4double Reflectivity_laterals[nEntries];// = {0.7612, 0.7621, 0.764, 0.764, 0.7
     rot_pmt -> rotateY(M_PI/2.*rad);
 // PMT
  //=============================================================================================================================================================================
-        G4VPhysicalVolume* pmt_phys = new G4PVPlacement(rot_pmt,G4ThreeVector(62.88*mm+plngth,0.0*mm,-30.75*mm),pmt_log,"PMT",det_log,false,0); // Replaces lines 1046-1047
-        G4VPhysicalVolume* cath_phys = new G4PVPlacement(rot_pmt,G4ThreeVector(62.88*mm+2*plngth+clngth+0.0*mm,0.0*mm,-30.75*mm),cath_log,"CATH",det_log,false,0); // REPLACE END// PMT
+        G4VPhysicalVolume* pmt_phys = new G4PVPlacement(rot_pmt,G4ThreeVector(62.88*mm+plngth-37*mm/2,0.0*mm,-30.75*mm),pmt_log,"PMT",det_log,false,0); // Replaces lines 1046-1047
+        G4VPhysicalVolume* cath_phys = new G4PVPlacement(rot_pmt,G4ThreeVector(62.88*mm+2*plngth+clngth+0.0*mm-37*mm/2,0.0*mm,-30.75*mm),cath_log,"CATH",det_log,false,0); // REPLACE END// PMT
 
         G4OpticalSurface* CTHOpSurface = new G4OpticalSurface("CathodeOpSurface");
         CTHOpSurface -> SetType(dielectric_metal);
@@ -1431,13 +1431,14 @@ G4double Reflectivity_laterals[nEntries];// = {0.7612, 0.7621, 0.764, 0.764, 0.7
     double rotation_c1 = 0.0*deg;
 
     if (fDetMode == 4) {
-
         detrot->rotateY(fDetAngle);
         rot_pmt -> rotateY(M_PI/4.*rad);
         rot_pmt_c1 -> rotateY(M_PI/4.*rad);
 
-        G4VPhysicalVolume* pmt_phys = new G4PVPlacement(rot_pmt,G4ThreeVector(7.5*cm+3.6*mm,0.*cm,0.0*mm),pmt_log,"PMT",det_log,false,0);//-159.6*mm
+        G4VPhysicalVolume* pmt_phys = new G4PVPlacement(rot_pmt,G4ThreeVector(7.5*cm+3.6*mm,0.*cm,0.0*mm),pmt_log,"PMT",det_log,false,0);//-159.6*mm, 3.6mm
         G4VPhysicalVolume* cath_phys = new G4PVPlacement(rot_pmt,G4ThreeVector(7.5*cm+(plngth+clngth+0.0*mm)*cos(M_PI/4*rad)+3.6*mm,0.*cm,-(plngth+clngth+0.0*mm)*sin(M_PI/4.*rad)-0.0*mm),cath_log,"CATH",det_log,false,0);
+
+        //G4VPhysicalVolume* filter_phys = new G4PVPlacement(rot_pmt,G4ThreeVector(7.5*cm+(4.0*mm)*cos(M_PI/4*rad)+2.25*mm,0.*cm,(4.0*mm)*sin(M_PI/4.*rad)+0.*mm),filter_log,"PMT",det_log,false,0);//-159.6*mm
 
 
         G4OpticalSurface* CTHOpSurface = new G4OpticalSurface("CathodeOpSurface");
@@ -1461,64 +1462,64 @@ G4double Reflectivity_laterals[nEntries];// = {0.7612, 0.7621, 0.764, 0.764, 0.7
         G4RotationMatrix* rotMylar_1 = new G4RotationMatrix;
         rotMylar_1->rotateY(0*deg);
 
-        //G4VPhysicalVolume* topMylar_1_phys
-        //= new G4PVPlacement(rotMylar_1,G4ThreeVector(-quartz_z/2-0.01*mm+0.05*mm,0*mm,-quartz_z-0.05*mm/2-0.01*mm),mylar_box_3_log,"topMylar_1_phys",det_log,false,0);
+        G4VPhysicalVolume* topMylar_1_phys
+        = new G4PVPlacement(rotMylar_1,G4ThreeVector(-quartz_z/2-0.01*mm+0.05*mm,0*mm,-quartz_z-0.05*mm/2-0.01*mm),mylar_box_3_log,"topMylar_1_phys",det_log,false,0);
 
         G4RotationMatrix* rotMylar_2 = new G4RotationMatrix;
         rotMylar_2->rotateY(0*deg);
 
-        //G4VPhysicalVolume* botMylar_1_phys
-        //= new G4PVPlacement(rotMylar_2,G4ThreeVector(quartz_z/2-0.01*mm,0*mm,quartz_z+0.05*mm/2+0.01*mm),mylar_box_2_log,"botMylar_1_phys",det_log,false,0);
+        G4VPhysicalVolume* botMylar_1_phys
+        = new G4PVPlacement(rotMylar_2,G4ThreeVector(quartz_z/2-0.01*mm,0*mm,quartz_z+0.05*mm/2+0.01*mm),mylar_box_2_log,"botMylar_1_phys",det_log,false,0);
 
         G4RotationMatrix* rotMylar_3 = new G4RotationMatrix;
         rotMylar_3->rotateX(90*deg);
 
-        //G4VPhysicalVolume* leftMylar_1_phys
-        //= new G4PVPlacement(rotMylar_3,G4ThreeVector(0*mm,-quartz_x - 0.05*mm/2- 0.01*mm,0*mm),mylar_box_1_log,"leftMylar_1_phys",det_log,false,0);
+        G4VPhysicalVolume* leftMylar_1_phys
+        = new G4PVPlacement(rotMylar_3,G4ThreeVector(0*mm,-quartz_x - 0.05*mm/2- 0.01*mm,0*mm),mylar_box_1_log,"leftMylar_1_phys",det_log,false,0);
 
         G4RotationMatrix* rotMylar_4 = new G4RotationMatrix;
         rotMylar_4->rotateX(90*deg);
 
-        //G4VPhysicalVolume* rightMylar_1_phys
-        //= new G4PVPlacement(rotMylar_4,G4ThreeVector(0*mm,quartz_x + 0.05*mm/2 +  0.01*mm,0*mm),mylar_box_1_log,"rightMylar_1_phys",det_log,false,0);
+        G4VPhysicalVolume* rightMylar_1_phys
+        = new G4PVPlacement(rotMylar_4,G4ThreeVector(0*mm,quartz_x + 0.05*mm/2 +  0.01*mm,0*mm),mylar_box_1_log,"rightMylar_1_phys",det_log,false,0);
 
         G4RotationMatrix* rotMylar_5 = new G4RotationMatrix;
         rotMylar_5->rotateY(90.0*deg);
 
-        //G4VPhysicalVolume* frontMylar_1_phys
-        //= new G4PVPlacement(rotMylar_5,G4ThreeVector(-quartz_y + quartz_z/2-0.01*mm-0.05*mm/2,0*mm,0*mm),mylar_box_4_log,"rightMylar_1_phys",det_log,false,0);
+        G4VPhysicalVolume* frontMylar_1_phys
+        = new G4PVPlacement(rotMylar_5,G4ThreeVector(-quartz_y + quartz_z/2-0.01*mm-0.05*mm/2,0*mm,0*mm),mylar_box_4_log,"rightMylar_1_phys",det_log,false,0);
 
 //-----------
 
         G4RotationMatrix* rotMylar2_1 = new G4RotationMatrix;
         rotMylar2_1->rotateY(0*deg);
 
-        //G4VPhysicalVolume* topMylar2_1_phys
-        //= new G4PVPlacement(rotMylar2_1,G4ThreeVector(-quartz2_z/2-0.01*mm,0*mm,-quartz2_z-0.05*mm/2-0.01*mm-quartz_zPos),mylar2_box_3_log,"topMylar2_1_phys",det_log_c1,false,0);
+        G4VPhysicalVolume* topMylar2_1_phys
+        = new G4PVPlacement(rotMylar2_1,G4ThreeVector(-quartz2_z/2-0.01*mm,0*mm,-quartz2_z-0.05*mm/2-0.01*mm-quartz_zPos),mylar2_box_3_log,"topMylar2_1_phys",det_log_c1,false,0);
 
         G4RotationMatrix* rotMylar2_2 = new G4RotationMatrix;
         rotMylar2_2->rotateY(0*deg);
 
-        //G4VPhysicalVolume* botMylar2_1_phys
-        //= new G4PVPlacement(rotMylar2_2,G4ThreeVector(quartz2_z/2-0.01*mm,0*mm,quartz2_z+0.05*mm/2+0.01*mm+quartz_zPos),mylar2_box_2_log,"botMylar2_1_phys",det_log_c1,false,0);
+        G4VPhysicalVolume* botMylar2_1_phys
+        = new G4PVPlacement(rotMylar2_2,G4ThreeVector(quartz2_z/2-0.01*mm,0*mm,quartz2_z+0.05*mm/2+0.01*mm+quartz_zPos),mylar2_box_2_log,"botMylar2_1_phys",det_log_c1,false,0);
 
         G4RotationMatrix* rotMylar2_3 = new G4RotationMatrix;
         rotMylar2_3->rotateX(90*deg);
 
-        //G4VPhysicalVolume* leftMylar2_1_phys
-        //= new G4PVPlacement(rotMylar2_3,G4ThreeVector(0*mm,-quartz_x - 0.05*mm/2 - 0.01*mm,quartz_zPos),mylar2_box_1_log,"leftMylar2_1_phys",det_log_c1,false,0);
+        G4VPhysicalVolume* leftMylar2_1_phys
+        = new G4PVPlacement(rotMylar2_3,G4ThreeVector(0*mm,-quartz_x - 0.05*mm/2 - 0.01*mm,quartz_zPos),mylar2_box_1_log,"leftMylar2_1_phys",det_log_c1,false,0);
 
         G4RotationMatrix* rotMylar2_4 = new G4RotationMatrix;
         rotMylar2_4->rotateX(90*deg);
 
-        //G4VPhysicalVolume* rightMylar2_1_phys
-        //= new G4PVPlacement(rotMylar2_4,G4ThreeVector(0*mm,quartz_x + 0.05*mm/2 + 0.01*mm,quartz_zPos),mylar2_box_1_log,"rightMylar2_1_phys",det_log_c1,false,0);
+        G4VPhysicalVolume* rightMylar2_1_phys
+        = new G4PVPlacement(rotMylar2_4,G4ThreeVector(0*mm,quartz_x + 0.05*mm/2 + 0.01*mm,quartz_zPos),mylar2_box_1_log,"rightMylar2_1_phys",det_log_c1,false,0);
 
         G4RotationMatrix* rotMylar2_5 = new G4RotationMatrix;
         rotMylar2_5->rotateY(90*deg);
 
-        //G4VPhysicalVolume* frontMylar2_1_phys
-        //= new G4PVPlacement(rotMylar2_5,G4ThreeVector(-quartz_y + quartz2_z/2-0.01*mm-0.05*mm/2,0*mm,0*mm-quartz_zPos),mylar2_box_4_log,"rightMylar2_1_phys",det_log_c1,false,0);
+        G4VPhysicalVolume* frontMylar2_1_phys
+        = new G4PVPlacement(rotMylar2_5,G4ThreeVector(-quartz_y + quartz2_z/2-0.01*mm-0.05*mm/2,0*mm,0*mm-quartz_zPos),mylar2_box_4_log,"rightMylar2_1_phys",det_log_c1,false,0);
 
     }
 
@@ -1527,11 +1528,12 @@ G4double Reflectivity_laterals[nEntries];// = {0.7612, 0.7621, 0.764, 0.764, 0.7
 
     G4RotationMatrix* detrot_c3 = new G4RotationMatrix;
     detrot_c3->rotateY(fDetAngle+rotation_c1);
+    //detrot_c3->rotateX(2*deg);
 
     G4RotationMatrix* rot_window = new G4RotationMatrix;
     rot_window -> rotateY(0*rad);
 
-    G4VPhysicalVolume* beampipe_window_phys = new G4PVPlacement(rot_window,G4ThreeVector(0*mm,0.0*mm,-3.9624*m),beampipe_window_log,"BEAMPIPE_WINDOW",world_log,false,0); // SLAC beampipe window
+    //G4VPhysicalVolume* beampipe_window_phys = new G4PVPlacement(rot_window,G4ThreeVector(0*mm,0.0*mm,-3.9624*m),beampipe_window_log,"BEAMPIPE_WINDOW",world_log,false,0); // SLAC beampipe window
 
     G4VPhysicalVolume* det_phys
     = new G4PVPlacement(detrot_c1,G4ThreeVector(fDetPosX,fDetPosY,0.*cm),det_log,"detector_phys",world_log,false,0);
@@ -1550,10 +1552,10 @@ G4double Reflectivity_laterals[nEntries];// = {0.7612, 0.7621, 0.764, 0.764, 0.7
     OpQuartzSurface->SetType(dielectric_dielectric);
     OpQuartzSurface->SetFinish(ground);
     //OpQuartzSurface->SetFinish(polished);
-    //OpQuartzSurface->SetModel(glisur);
-    //OpQuartzSurface->SetPolish(fQuartzPolish);
-    OpQuartzSurface->SetModel(unified);
-    OpQuartzSurface->SetSigmaAlpha(0.05);
+    OpQuartzSurface->SetModel(glisur);
+    OpQuartzSurface->SetPolish(fQuartzPolish);
+    //OpQuartzSurface->SetModel(unified);
+    //OpQuartzSurface->SetSigmaAlpha(0.02);
 
     //G4LogicalBorderSurface* QuartzSurface =
     //new G4LogicalBorderSurface("QuartzSurface",quartz_phys,det_phys,OpQuartzSurface);
@@ -1572,9 +1574,11 @@ G4double Reflectivity_laterals[nEntries];// = {0.7612, 0.7621, 0.764, 0.764, 0.7
     //OpQuartzSurface_c1->SetFinish(polished);
     OpQuartzSurface_c1->SetModel(glisur);
     OpQuartzSurface_c1->SetPolish(fQuartzPolish);
+    //OpQuartzSurface->SetModel(unified);
+    //OpQuartzSurface->SetSigmaAlpha(0.02);
 
-    G4LogicalBorderSurface* QuartzSurface2 =
-    new G4LogicalBorderSurface("QuartzSurface2",quartz2_phys,det_phys_c1,OpQuartzSurface_c1);
+    //G4LogicalBorderSurface* QuartzSurface2 =
+    //new G4LogicalBorderSurface("QuartzSurface2",quartz2_phys,det_phys_c1,OpQuartzSurface_c1);
     }
 
     // mirrors and cathode
@@ -1587,8 +1591,8 @@ G4double Reflectivity_laterals[nEntries];// = {0.7612, 0.7621, 0.764, 0.764, 0.7
     MOpSurface -> SetType(dielectric_metal);
     MOpSurface -> SetFinish(ground);
     MOpSurface -> SetModel(glisur);
-    //MOpSurface -> SetFinish(polished);
-    MOpSurface -> SetPolish(0.2);
+    MOpSurface -> SetFinish(polished);
+    //MOpSurface -> SetPolish(0.2);
 
     MOpSurface_laterals -> SetType(dielectric_metal);
     MOpSurface_laterals -> SetFinish(polished);
@@ -1612,8 +1616,6 @@ G4double Reflectivity_laterals[nEntries];// = {0.7612, 0.7621, 0.764, 0.764, 0.7
     //G4MaterialPropertiesTable* COpSurfaceProperty = new G4MaterialPropertiesTable();
     G4MaterialPropertiesTable* TubeSurfaceProperty = new G4MaterialPropertiesTable();
 
-    G4MaterialPropertiesTable* QWOpSurfaceProperty = new G4MaterialPropertiesTable();
-
     MOpSurfaceProperty -> AddProperty("REFLECTIVITY",PhotonEnergy,Reflectivity1,nEntries);
 
     MOpSurface -> SetMaterialPropertiesTable(MOpSurfaceProperty);
@@ -1627,10 +1629,6 @@ G4double Reflectivity_laterals[nEntries];// = {0.7612, 0.7621, 0.764, 0.764, 0.7
 
 
     //CTHOpSurface -> SetMaterialPropertiesTable(COpSurfaceProperty);
-
-    //QWOpSurfaceProperty -> AddProperty("REFLECTIVITY",PhotonEnergy,QWReflectivity,nEntries);
-    QWOpSurfaceProperty -> AddProperty("RINDEX",PhotonEnergy,RefractiveIndex1,nEntries);
-    QWOpSurfaceProperty -> AddProperty("ABSLENGTH",PhotonEnergy,Absorption1,nEntries);
 
     if (fDetMode == 0) {
         G4LogicalSkinSurface* TubeSurface_1 = new
@@ -1752,8 +1750,11 @@ G4double Reflectivity_laterals[nEntries];// = {0.7612, 0.7621, 0.764, 0.764, 0.7
 
     }
 
-    //G4LogicalSkinSurface* QuartzWindowSurface = new
-    //G4LogicalSkinSurface("QuartzWindowOpS",pmt_log,QWOpSurface);
+    G4LogicalSkinSurface* QuartzWindowSurface = new
+    G4LogicalSkinSurface("QuartzWindowOpS",pmt_log,QWOpSurface);
+
+    G4LogicalSkinSurface* FilterWindowSurface = new
+    G4LogicalSkinSurface("QuartzWindowOpS",filter_log,QWOpSurface);
 
     //G4LogicalSkinSurface* CathSurface = new
     //G4LogicalSkinSurface("CathOpS1", cath_log,CTHOpSurface);

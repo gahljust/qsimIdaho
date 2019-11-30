@@ -1,0 +1,29 @@
+[$Version]
+update_info=kghostview.upd:1changeToKConfigXT,kghostview.upd:2changeToKConfigXT
+
+[Desktop Entry]
+FullScreen=false
+
+[MainWindow]
+Height 1050=1051
+Height 768=769
+Width 1366=1367
+Width 1680=1681
+
+[RecentFiles]
+File1=$HOME/solid/11-05-2013/build/pictures/QuartzHit.eps.eps
+File2=$HOME/solid/11-05-2013/build/pictures/Quartz_hit.eps
+File3=$HOME/solid/11-05-2013/build/pictures/quartzhit.eps.eps
+File4=$HOME/solid/11-05-2013/build/pictures/geometry.eps
+File5=$HOME/REMOLL/30-05-2013/remoll/analysis/plots/cont_Ratio_DeltaAstat_Aee_1E7_Target_Length_150cm_Target_Position_0cm.eps
+File6=$HOME/REMOLL/30-05-2013/remoll/analysis/plots/cont_ep_bkgr1_1E7_Target_Length_150cm_Target_Position_0cm.eps
+File7=$HOME/REMOLL/30-05-2013/remoll/analysis/plots/ep_bkgr1_1E7_Target_Length_150cm_Target_Position_0cm.eps
+File8=$HOME/REMOLL/02-07-2013/remoll/analysis/plots/cont_ep_bkgr1_1E3_detector_plane_2750mm.eps
+Name1=QuartzHit.eps.eps
+Name2=Quartz_hit.eps
+Name3=quartzhit.eps.eps
+Name4=geometry.eps
+Name5=cont_Ratio_DeltaAstat_Aee_1E7_Target_Length_150cm_Target_Position_0cm.eps
+Name6=cont_ep_bkgr1_1E7_Target_Length_150cm_Target_Position_0cm.eps
+Name7=ep_bkgr1_1E7_Target_Length_150cm_Target_Position_0cm.eps
+Name8=cont_ep_bkgr1_1E3_detector_plane_2750mm.eps

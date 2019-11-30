@@ -1,0 +1,321 @@
+[$Version]
+update_info=kile.upd:Kile1.5v1,kile.upd:Kile1.6v1,kile.upd:Kile1.7v1,kile.upd:Kile1.9v1,kile.upd:Kile1.9v2,kile.upd:Kile2.0v1,kile.upd:Kile2.0v2,kile.upd:Kile2.0v3,kile.upd:Kile2.0v4,kile.upd:Kile2.0v5
+
+[Tool/Archive/Tar]
+class=Archive
+command=tar
+from=kilepr
+options=cvf '%S.tar' %AFL
+to=tar
+type=Process
+
+[Tool/Archive/Tar + bzip2]
+class=Archive
+command=tar
+from=kilepr
+options=jcvf '%S.tar.bz2' %AFL
+to=tar.bz2
+type=Process
+
+[Tool/Archive/Tar + gzip]
+class=Archive
+command=tar
+from=kilepr
+options=zcvf '%S.tar.gz' %AFL
+to=tar.gz
+type=Process
+
+[Tool/Archive/Zip]
+class=Archive
+command=zip
+from=kilepr
+options='%S.zip' %AFL
+to=zip
+type=Process
+
+[Tool/Asymptote/Default]
+class=Compile
+command=asy
+from=
+options='%S'
+to=
+type=Process
+
+[Tool/BibTeX/8bitVersion]
+class=Compile
+command=bibtex8
+from=aux
+options='%S'
+to=bbl
+type=Process
+
+[Tool/Convert/eps2png]
+class=Convert
+command=convert
+ofrom=eps
+options=+adjoin -antialias -trim -transparent white -density %res '%S.eps' '%S.png'
+to=png
+type=Process
+
+[Tool/Convert/pdf2png]
+class=Convert
+command=convert
+from=pdf
+options=+adjoin -antialias -trim -transparent white -density %res '%S.pdf' '%S.png'
+to=png
+type=Process
+
+[Tool/DBLaTeX/Convert to DVI]
+class=Compile
+command=dblatex
+from=xml
+options=-tdvi '%S.xml'
+to=dvi
+type=Process
+
+[Tool/DBLaTeX/Convert to LaTeX]
+class=Compile
+command=dblatex
+from=xml
+options=-ttex '%S.xml'
+to=tex
+type=Process
+
+[Tool/DBLaTeX/Convert to PDF]
+class=Compile
+command=dblatex
+from=xml
+options=-tpdf '%S.xml'
+to=pdf
+type=Process
+
+[Tool/DBLaTeX/Convert to Postscript]
+class=Compile
+command=dblatex
+from=xml
+options=-tps '%S.xml'
+to=ps
+type=Process
+
+[Tool/DVItoPDF/Black and White]
+command=dvipdfm
+from=dvi
+options=-c '%S.dvi'
+to=pdf
+type=Process
+
+[Tool/DVItoPDF/Landscape]
+command=dvipdfm
+from=dvi
+options=-l '%S.dvi'
+to=pdf
+type=Process
+
+[Tool/DVItoPDF/Modern]
+class=Convert
+command=dvipdfmx
+from=dvi
+options='%S.dvi'
+to=pdf
+type=Process
+
+[Tool/DVItoPNG/Default]
+class=Convert
+command=dvipng
+from=dvi
+options=-T tight -D %res -o '%S.png' '%S.dvi'
+to=png
+type=Process
+
+[Tool/DVItoPS/dvi2eps]
+class=Convert
+command=dvips
+from=dvi
+options=-o '%S.eps' '%S.dvi'
+to=eps
+type=Process
+
+[Tool/LaTeX to Web/TeX4ht (LaTeX to HTML)]
+class=Compile
+command=mk4ht
+from=tex
+options=htlatex '%source'
+to=html
+type=Process
+
+[Tool/LaTeX to Web/TeX4ht (LaTeX to MathML)]
+class=Compile
+command=mk4ht
+from=tex
+options=xhmlatex '%source'
+to=xml
+type=Process
+
+[Tool/LaTeX to Web/TeX4ht (LaTeX to XML)]
+class=Compile
+command=mk4ht
+from=tex
+options=xhlatex '%source'
+to=xml
+type=Process
+
+[Tool/LaTeX to Web/latex2html]
+class=Compile
+command=latex2html
+from=tex
+options='%source'
+to=html
+type=Process
+
+[Tool/Lilypond/DVI]
+class=Compile
+command=lilypond
+from=ly
+options=--dvi '%source'
+to=dvi
+type=Process
+
+[Tool/Lilypond/PDF]
+class=Compile
+command=lilypond
+from=ly
+options=--pdf '%source'
+to=pdf
+type=Process
+
+[Tool/Lilypond/PNG]
+class=Compile
+command=lilypond
+from=ly
+options=--png '%source'
+to=png
+type=Process
+
+[Tool/Lilypond/PS]
+class=Compile
+command=lilypond
+from=ly
+options=--ps '%source'
+to=ps
+type=Process
+
+[Tool/Lilypond/TeX]
+class=Compile
+command=lilypond
+from=ly
+options=--tex '%source'
+to=tex
+type=Process
+
+[Tool/PDFLaTeX/Draft]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=pdflatex
+from=
+jumpToFirstError=yes
+options=-draftmode-interaction=nonstopmode'%source'
+to=pdf
+type=Process
+
+[Tool/PDFTeX/Draft]
+class=Compile
+command=pdftex
+from=
+options=-draftmode-interaction=nonstopmode'%source'
+to=pdf
+type=Process
+
+[Tool/PreviewLaTeX/Default]
+autoRun=no
+checkForRoot=no
+class=LaTeXpreview
+command=latex
+from=
+jumpToFirstError=yes
+options=-interaction=nonstopmode '%source'
+to=dvi
+type=Process
+
+[Tool/PreviewPDFLaTeX/Default]
+autoRun=no
+checkForRoot=no
+class=LaTeXpreview
+command=pdflatex
+from=
+jumpToFirstError=yes
+options=-interaction=nonstopmode '%source'
+to=pdf
+type=Process
+
+[Tool/QuickBuild/LaTeX]
+class=Sequence
+sequence=LaTeX
+type=Sequence
+
+[Tool/ViewBib/JabRef]
+class=ViewBib
+command=jabref
+from=bib
+options='%source'
+to=bib
+type=Process
+
+[Tool/ViewBib/KBib]
+class=ViewBib
+command=kbib
+from=bib
+options='%source'
+to=bib
+type=Process
+
+[Tool/ViewBib/KBibTex]
+class=ViewBib
+command=kbibtex
+from=bib
+options='%source'
+to=bib
+type=Process
+
+[Tool/ViewBib/KBibTex (embedded)]
+class=ViewBib
+className=KBibTeXPart
+from=bib
+libName=libkbibtexpart
+liboptions='%source'
+state=Viewer
+to=bib
+type=Part
+
+[Tool/ViewBib/gbib]
+class=ViewBib
+command=gbib
+from=bib
+options='%source'
+to=bib
+type=Process
+
+[Tools]
+Archive=Tar + gzip
+Asymptote=Default
+Convert=pdf2png
+DBLaTeX=Convert to LaTeX
+DVItoPDF=Modern
+DVItoPNG=Default
+LaTeX to Web=latex2html
+Lilypond=PDF
+PreviewLaTeX=Default
+PreviewPDFLaTeX=Default
+
+[ToolsGUI]
+Archive=Archive,package
+Convert=Convert,convert
+DBLaTeX=Compile,dblatex
+DVItoPNG=Convert,dvipng
+LaTeX to Web=Compile,l2h
+Lilypond=Compile,lilypond
+PDFTeX=Compile,pdftex
+PreviewLaTeX=none,none
+PreviewPDFLaTeX=none,none
+TeX=Compile,texcompiler
+ViewBib=View,viewbib

@@ -1,0 +1,32 @@
+/qsim/filename /home/sluddani/showerData/qsim_seed_432507.root
+
+/qsim/seed 432507 #change number to change random number seed
+
+
+# Set run mode
+/qsim/fDetMode 3 
+/qsim/fStandMode 0
+/qsim/fSourceMode 1
+/qsim/fQMode 2
+
+# Set detector properties
+/qsim/fQuartzPolish 0.981
+/qsim/fDetAngle 0 deg 
+/qsim/fDetPosX 0 cm
+/qsim/fDetPosY 0 cm
+
+# set beam to "raster" 
+ /qsim/xmin -5.25 cm
+ /qsim/xmax 4.65 cm
+ /qsim/ymin -12.3 cm
+ /qsim/ymax 12.3 cm
+
+/run/initialize
+
+/qsim/emin   7.88 GeV #beam energies
+/qsim/emax   7.88 GeV
+
+/gun/particle e- #type of particle is an electron
+
+/run/beamOn 1000
+

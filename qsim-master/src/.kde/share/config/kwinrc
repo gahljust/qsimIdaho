@@ -1,0 +1,5 @@
+[$Version]
+update_info=kwin3_plugin.upd:kde3.2,kwin.upd:kde3.0r1,kwin.upd:kde3.2Xinerama,kwin_focus1.upd:kwin_focus1,kwin_focus2.upd:kwin_focus2
+
+[Windows]
+IgnoreFocusStealingClasses=kio_uiserver

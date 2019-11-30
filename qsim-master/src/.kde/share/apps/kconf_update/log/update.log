@@ -1,0 +1,764 @@
+2013-05-21T18:53:06 Checking update-file '/usr/share/apps/kconf_update/kopete-nameTracking.upd' for new updates
+2013-05-21T18:53:06 kopete-nameTracking.upd: Found new update 'kopete0.9/r1'
+2013-05-21T18:53:06 kopete-nameTracking.upd: Running script 'kopete-nameTracking-kconf_update'
+2013-05-21T18:53:06 Checking update-file '/usr/share/apps/kconf_update/kcmdisplayrc.upd' for new updates
+2013-05-21T18:53:06 kcmdisplayrc.upd: Found new update 'kde3'
+2013-05-21T18:53:06 Checking update-file '/usr/share/apps/kconf_update/khotkeys_printscreen.upd' for new updates
+2013-05-21T18:53:06 khotkeys_printscreen.upd: Found new update 'printscreen'
+2013-05-21T18:53:06 khotkeys_printscreen.upd: Running script 'khotkeys_update' with arguments '--id printscreen'
+2013-05-21T18:53:16 Checking update-file '/usr/share/apps/kconf_update/kcookiescfg.upd' for new updates
+2013-05-21T18:53:16 kcookiescfg.upd: Found new update 'kde2.2/b1'
+2013-05-21T18:53:16 kcookiescfg.upd: Found new update 'kde3.1/cvs'
+2013-05-21T18:53:16 Checking update-file '/usr/share/apps/kconf_update/kopete-jabberpriorityaddition-kconf_update.upd' for new updates
+2013-05-21T18:53:16 kopete-jabberpriorityaddition-kconf_update.upd: Found new update 'kopete0.9/r1'
+2013-05-21T18:53:16 kopete-jabberpriorityaddition-kconf_update.upd: Running script 'kopete-jabberpriorityaddition-kconf_update.sh'
+2013-05-21T18:53:16 Checking update-file '/usr/share/apps/kconf_update/klipperrc.upd' for new updates
+2013-05-21T18:53:16 klipperrc.upd: Found new update '25082001'
+2013-05-21T18:53:16 klipperrc.upd: Running script 'klipper-1-2.pl'
+2013-05-21T18:53:16 klipperrc.upd: Found new update 'kde3.1'
+2013-05-21T18:53:16 klipperrc.upd: Running script 'klipper-kde31.sh'
+2013-05-21T18:53:16 Checking update-file '/usr/share/apps/kconf_update/kwinupdatewindowsettings.upd' for new updates
+2013-05-21T18:53:16 kwinupdatewindowsettings.upd: Found new update 'kde33b1'
+2013-05-21T18:53:16 kwinupdatewindowsettings.upd: Running script 'kwin_update_window_settings'
+2013-05-21T18:53:16 Checking update-file '/usr/share/apps/kconf_update/konqsidebartng.upd' for new updates
+2013-05-21T18:53:16 konqsidebartng.upd: Found new update 'konqsidebartng_rc'
+2013-05-21T18:53:16 konqsidebartng.upd: Found new update 'konqsidebartng_entries'
+2013-05-21T18:53:16 konqsidebartng.upd: Running script 'move_konqsidebartng_entries.sh'
+2013-05-21T18:53:17 Checking update-file '/usr/share/apps/kconf_update/kwinsticky.upd' for new updates
+2013-05-21T18:53:17 kwinsticky.upd: Found new update 'stickyupd3.1'
+2013-05-21T18:53:17 Checking update-file '/usr/share/apps/kconf_update/kwin3_plugin.upd' for new updates
+2013-05-21T18:53:17 kwin3_plugin.upd: Found new update 'kde3.2'
+2013-05-21T18:53:17 kwin3_plugin.upd: Running script 'kwin3_plugin.pl'
+2013-05-21T18:53:17 kwin3_plugin.upd: Updating kwinrc:Style:ButtonsOnLeft to 'M'
+2013-05-21T18:53:17 kwin3_plugin.upd: Updating kwinrc:Style:ButtonsOnRight to 'IAX'
+2013-05-21T18:53:17 kwin3_plugin.upd: Updating kwinrc:Style:CustomButtonPositions to 'true'
+2013-05-21T18:53:17 kwin3_plugin.upd: Updating kwinrc:Style:PluginLib to 'kwin3_plastik'
+2013-05-21T18:53:17 kwin3_plugin.upd: Updating kwinrc:Style:ShowToolTips to 'true'
+2013-05-21T18:53:17 kwin3_plugin.upd: Updating kwinrc:Windows:AutoRaise to 'off'
+2013-05-21T18:53:17 kwin3_plugin.upd: Updating kwinrc:Windows:AutoRaiseInterval to '0'
+2013-05-21T18:53:17 kwin3_plugin.upd: Updating kwinrc:Windows:BorderSnapZone to '10'
+2013-05-21T18:53:17 kwin3_plugin.upd: Updating kwinrc:Windows:ClickRaise to 'on'
+2013-05-21T18:53:17 kwin3_plugin.upd: Updating kwinrc:Windows:FocusPolicy to 'ClickToFocus'
+2013-05-21T18:53:17 kwin3_plugin.upd: Updating kwinrc:Windows:MoveMode to 'Opaque'
+2013-05-21T18:53:17 kwin3_plugin.upd: Updating kwinrc:Windows:ResizeMode to 'Opaque'
+2013-05-21T18:53:17 kwin3_plugin.upd: Updating kwinrc:Windows:TitlebarDoubleClickCommand to 'Maximize'
+2013-05-21T18:53:17 kwin3_plugin.upd: Updating kwinrc:Windows:WindowSnapZone to '10'
+2013-05-21T18:53:17 kwin3_plugin.upd: Updating kwinrc:Windows:WindowsPlacement to 'Smart'
+2013-05-21T18:53:17 Checking update-file '/usr/share/apps/kconf_update/kioslave.upd' for new updates
+2013-05-21T18:53:17 kioslave.upd: Found new update 'kde2.2/r1'
+2013-05-21T18:53:17 kioslave.upd: Skipping update 'kde2.2/r1'
+2013-05-21T18:53:17 kioslave.upd: Found new update 'kde2.2/r2'
+2013-05-21T18:53:17 kioslave.upd: Running script 'useragent.pl'
+2013-05-21T18:53:17 kioslave.upd: Script removes kioslaverc:UserAgent:EntriesCount
+2013-05-21T18:53:17 kioslave.upd: Found new update 'kde2.2/r3'
+2013-05-21T18:53:17 kioslave.upd: Running script 'proxytype.pl'
+2013-05-21T18:53:17 kioslave.upd: Script removes kioslaverc:Proxy Settings:UseProxy
+2013-05-21T18:53:17 Checking update-file '/usr/share/apps/kconf_update/audiocd.upd' for new updates
+2013-05-21T18:53:17 audiocd.upd: Found new update '1'
+2013-05-21T18:53:17 audiocd.upd: Running script 'upgrade-metadata.sh'
+2013-05-21T18:53:17 Checking update-file '/usr/share/apps/kconf_update/korn-3-4-config_change.upd' for new updates
+2013-05-21T18:53:17 korn-3-4-config_change.upd: Found new update 'korn_kde_3_4_config_change'
+2013-05-21T18:53:17 korn-3-4-config_change.upd: Running script 'korn-3-4-config_change'
+2013-05-21T18:53:17 Checking update-file '/usr/share/apps/kconf_update/kfmclient_3_2.upd' for new updates
+2013-05-21T18:53:17 kfmclient_3_2.upd: Found new update 'kfmclient_3_2'
+2013-05-21T18:53:17 kfmclient_3_2.upd: Running script 'kfmclient_3_2_update.sh'
+2013-05-21T18:53:17 kfmclient_3_2.upd: Script removes kfmclientrc:Settings:StartNewKonqueror
+2013-05-21T18:53:18 Checking update-file '/usr/share/apps/kconf_update/kpilot.upd' for new updates
+2013-05-21T18:53:18 kpilot.upd: Found new update 'kdepim_3.3'
+2013-05-21T18:53:18 kpilot.upd: Found new update 'kdepim_3.3_SplitConfig'
+2013-05-21T18:53:18 kpilot.upd: Skipping update 'kdepim_3.3_SplitConfig'
+2013-05-21T18:53:18 Checking update-file '/usr/share/apps/kconf_update/korganizer.upd' for new updates
+2013-05-21T18:53:18 korganizer.upd: Found new update 'korganizer_3.4_GroupwareCleanup'
+2013-05-21T18:53:18 korganizer.upd: Found new update 'korganizer_3.4_WebExport'
+2013-05-21T18:53:18 korganizer.upd: Found new update 'korganizer_3.4_FilterAction'
+2013-05-21T18:53:18 korganizer.upd: Found new update 'korganizer_3.4_HolidayPlugin'
+2013-05-21T18:53:18 Checking update-file '/usr/share/apps/kconf_update/konqueror_gestures_kde321_update.upd' for new updates
+2013-05-21T18:53:18 konqueror_gestures_kde321_update.upd: Found new update 'kde321'
+2013-05-21T18:53:18 konqueror_gestures_kde321_update.upd: Running script 'khotkeys_update' with arguments '--id konqueror_gestures_kde321'
+2013-05-21T18:53:28 Checking update-file '/usr/share/apps/kconf_update/kwiniconify.upd' for new updates
+2013-05-21T18:53:28 kwiniconify.upd: Found new update 'iconifyupd3.1'
+2013-05-21T18:53:29 Checking update-file '/usr/share/apps/kconf_update/noatun.upd' for new updates
+2013-05-21T18:53:29 noatun.upd: Found new update 'noatun20'
+2013-05-21T18:53:29 noatun.upd: Running script 'noatun20update'
+2013-05-21T18:53:29 Checking update-file '/usr/share/apps/kconf_update/kickerrc.upd' for new updates
+2013-05-21T18:53:29 kickerrc.upd: Found new update 'kde_3_1_sizeChanges'
+2013-05-21T18:53:29 kickerrc.upd: Running script 'kicker-3.1-properSizeSetting.pl'
+2013-05-21T18:53:29 kickerrc.upd: Found new update 'kde_3_4_reverseLayout'
+2013-05-21T18:53:29 kickerrc.upd: Running script 'kicker-3.4-reverseLayout'
+2013-05-21T18:53:29 kickerrc.upd: Updating kickerrc:Applet_1:FreeSpace2 to '0'
+2013-05-21T18:53:29 kickerrc.upd: Updating kickerrc:Applet_2:FreeSpace2 to '0'
+2013-05-21T18:53:29 kickerrc.upd: Updating kickerrc:Applet_3:FreeSpace2 to '1'
+2013-05-21T18:53:29 kickerrc.upd: Updating kickerrc:Applet_4:FreeSpace2 to '1'
+2013-05-21T18:53:29 kickerrc.upd: Updating kickerrc:Applet_5:FreeSpace2 to '1'
+2013-05-21T18:53:29 kickerrc.upd: Updating kickerrc:General:Applets2 to 'KMenuButton_1,ServiceButton_1,ServiceButton_2,ServiceButton_3,ServiceButton_4,ServiceButton_5,Applet_1,Applet_2,Applet_3,Applet_4,Applet_5'
+2013-05-21T18:53:29 kickerrc.upd: Updating kickerrc:KMenuButton_1:FreeSpace2 to '0'
+2013-05-21T18:53:29 kickerrc.upd: Updating kickerrc:ServiceButton_1:FreeSpace2 to '0'
+2013-05-21T18:53:29 kickerrc.upd: Updating kickerrc:ServiceButton_2:FreeSpace2 to '0'
+2013-05-21T18:53:29 kickerrc.upd: Updating kickerrc:ServiceButton_3:FreeSpace2 to '0'
+2013-05-21T18:53:29 kickerrc.upd: Updating kickerrc:ServiceButton_4:FreeSpace2 to '0'
+2013-05-21T18:53:29 kickerrc.upd: Updating kickerrc:ServiceButton_5:FreeSpace2 to '0'
+2013-05-21T18:53:29 kickerrc.upd: Found new update 'kde_3_5_taskbarEnums'
+2013-05-21T18:53:29 kickerrc.upd: Running script 'kicker-3.5-taskbarEnums.pl'
+2013-05-21T18:53:29 kickerrc.upd: Found new update 'kde_3_5_kconfigXTize'
+2013-05-21T18:53:29 kickerrc.upd: Running script 'kicker-3.5-kconfigXTize.pl'
+2013-05-21T18:53:29 kickerrc.upd: Updating kickerrc:menus:MenuEntryFormat to 'NameOnly'
+2013-05-21T18:53:29 kickerrc.upd: RemoveKey removes kickerrc:menus:DetailedMenuEntries
+2013-05-21T18:53:29 Checking update-file '/usr/share/apps/kconf_update/kbabel-difftoproject.upd' for new updates
+2013-05-21T18:53:29 kbabel-difftoproject.upd: Found new update 'kde34'
+2013-05-21T18:53:29 Checking update-file '/usr/share/apps/kconf_update/kopete-account-kconf_update.upd' for new updates
+2013-05-21T18:53:29 kopete-account-kconf_update.upd: Found new update 'kopete0.7/r1'
+2013-05-21T18:53:29 kopete-account-kconf_update.upd: Running script 'kopete-account-kconf_update.sh'
+2013-05-21T18:53:29 kopete-account-kconf_update.upd: Found new update 'kopete0.10/r1'
+2013-05-21T18:53:29 kopete-account-kconf_update.upd: Running script 'kopete-account-0.10.pl'
+2013-05-21T18:53:29 Checking update-file '/usr/share/apps/kconf_update/konsole.upd' for new updates
+2013-05-21T18:53:29 konsole.upd: Found new update 'kde2.2/r1'
+2013-05-21T18:53:29 konsole.upd: Found new update 'kde3.0/r1'
+2013-05-21T18:53:29 konsole.upd: Running script 'schemaStrip.pl'
+2013-05-21T18:53:29 konsole.upd: Updating konsolerc:Desktop Entry:MenuBar to 'Enabled'
+2013-05-21T18:53:29 konsole.upd: Updating konsolerc:Desktop Entry:TerminalSizeHint to 'false'
+2013-05-21T18:53:29 konsole.upd: Updating konsolerc:Desktop Entry:bellmode to '1'
+2013-05-21T18:53:29 konsole.upd: Updating konsolerc:Desktop Entry:defaultfont to 'Monospace,10,-1,5,50,0,0,0,1,0'
+2013-05-21T18:53:29 konsole.upd: Updating konsolerc:Desktop Entry:font to '6'
+2013-05-21T18:53:29 konsole.upd: Updating konsolerc:Desktop Entry:scrollbar to '2'
+2013-05-21T18:53:29 konsole.upd: Updating konsolerc:TipOfDay:RunOnStart to 'false'
+2013-05-21T18:53:29 Checking update-file '/usr/share/apps/kconf_update/kwin.upd' for new updates
+2013-05-21T18:53:29 kwin.upd: Found new update 'kde3.0r1'
+2013-05-21T18:53:29 kwin.upd: Running script 'pluginlibFix.pl'
+2013-05-21T18:53:29 kwin.upd: Updating kwinrc:Style:ButtonsOnLeft to 'M'
+2013-05-21T18:53:29 kwin.upd: Updating kwinrc:Style:ButtonsOnRight to 'IAX'
+2013-05-21T18:53:29 kwin.upd: Updating kwinrc:Style:CustomButtonPositions to 'true'
+2013-05-21T18:53:29 kwin.upd: Updating kwinrc:Style:PluginLib to 'kwin3_plastik'
+2013-05-21T18:53:29 kwin.upd: Updating kwinrc:Style:ShowToolTips to 'true'
+2013-05-21T18:53:29 kwin.upd: Updating kwinrc:Windows:AutoRaise to 'off'
+2013-05-21T18:53:29 kwin.upd: Updating kwinrc:Windows:AutoRaiseInterval to '0'
+2013-05-21T18:53:29 kwin.upd: Updating kwinrc:Windows:BorderSnapZone to '10'
+2013-05-21T18:53:29 kwin.upd: Updating kwinrc:Windows:ClickRaise to 'on'
+2013-05-21T18:53:29 kwin.upd: Updating kwinrc:Windows:FocusPolicy to 'ClickToFocus'
+2013-05-21T18:53:29 kwin.upd: Updating kwinrc:Windows:MoveMode to 'Opaque'
+2013-05-21T18:53:29 kwin.upd: Updating kwinrc:Windows:ResizeMode to 'Opaque'
+2013-05-21T18:53:29 kwin.upd: Updating kwinrc:Windows:TitlebarDoubleClickCommand to 'Maximize'
+2013-05-21T18:53:29 kwin.upd: Updating kwinrc:Windows:WindowSnapZone to '10'
+2013-05-21T18:53:29 kwin.upd: Updating kwinrc:Windows:WindowsPlacement to 'Smart'
+2013-05-21T18:53:29 kwin.upd: Found new update 'kde3.2Xinerama'
+2013-05-21T18:53:29 Checking update-file '/usr/share/apps/kconf_update/knewsticker.upd' for new updates
+2013-05-21T18:53:29 knewsticker.upd: Found new update 'KNewsTicker-0.2'
+2013-05-21T18:53:29 knewsticker.upd: Running script 'knt-0.1-0.2.pl'
+2013-05-21T18:53:29 knewsticker.upd: Found new update 'KNewsTicker-0.2-Rename-KDE3'
+2013-05-21T18:53:29 knewsticker.upd: Found new update 'KNewsTicker-0.2-Rename-KDE3.1'
+2013-05-21T18:53:30 Checking update-file '/usr/share/apps/kconf_update/kopete-jabberproxytype-kconf_update.upd' for new updates
+2013-05-21T18:53:30 kopete-jabberproxytype-kconf_update.upd: Found new update 'kopete0.9/r1'
+2013-05-21T18:53:30 kopete-jabberproxytype-kconf_update.upd: Running script 'kopete-jabberproxytype-kconf_update.sh'
+2013-05-21T18:53:30 Checking update-file '/usr/share/apps/kconf_update/kopete-pluginloader2.upd' for new updates
+2013-05-21T18:53:30 kopete-pluginloader2.upd: Found new update 'kopete0.8/r1'
+2013-05-21T18:53:30 kopete-pluginloader2.upd: Running script 'kopete-pluginloader2.sh'
+2013-05-21T18:53:30 Checking update-file '/usr/share/apps/kconf_update/kaccel.upd' for new updates
+2013-05-21T18:53:30 kaccel.upd: Found new update 'kde3.3/r1'
+2013-05-21T18:53:30 kaccel.upd: Running script 'convertShortcuts.pl'
+2013-05-21T18:53:30 Checking update-file '/usr/share/apps/kconf_update/kopete-pluginloader.upd' for new updates
+2013-05-21T18:53:30 kopete-pluginloader.upd: Found new update 'kopete0.7/r1'
+2013-05-21T18:53:30 kopete-pluginloader.upd: Running script 'kopete-pluginloader.pl'
+2013-05-21T18:53:30 kopete-pluginloader.upd: Script removes kopeterc::Modules
+2013-05-21T18:53:30 kopete-pluginloader.upd: Removing empty group kopeterc:
+2013-05-21T18:53:30 Checking update-file '/usr/share/apps/kconf_update/mouse_cursor_theme.upd' for new updates
+2013-05-21T18:53:30 mouse_cursor_theme.upd: Found new update 'kde3.4.99'
+2013-05-21T18:53:30 Checking update-file '/usr/share/apps/kconf_update/kile.upd' for new updates
+2013-05-21T18:53:30 kile.upd: Found new update 'Kile1.5v1'
+2013-05-21T18:53:30 kile.upd: Found new update 'Kile1.6v1'
+2013-05-21T18:53:30 kile.upd: Running script 'kile1.6_upd.pl'
+2013-05-21T18:53:30 kile.upd: Found new update 'Kile1.7v1'
+2013-05-21T18:53:30 kile.upd: Running script 'kile1.7_upd.pl'
+2013-05-21T18:53:30 kile.upd: Script removes group kilerc:Tool/PreviewLaTeX/Default
+2013-05-21T18:53:30 kile.upd: Script removes group kilerc:Tool/PreviewPDFLaTeX/Default
+2013-05-21T18:53:30 kile.upd: Script removes kilerc:Tools:PreviewLaTeX
+2013-05-21T18:53:30 kile.upd: Script removes kilerc:Tools:PreviewPDFLaTeX
+2013-05-21T18:53:30 kile.upd: Script removes kilerc:ToolsGUI:PreviewLaTeX
+2013-05-21T18:53:30 kile.upd: Script removes kilerc:ToolsGUI:PreviewPDFLaTeX
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/PreviewLaTeX/Default:autoRun to 'no'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/PreviewLaTeX/Default:checkForRoot to 'no'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/PreviewLaTeX/Default:class to 'LaTeXpreview'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/PreviewLaTeX/Default:command to 'latex'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/PreviewLaTeX/Default:from to ''
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/PreviewLaTeX/Default:jumpToFirstError to 'yes'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/PreviewLaTeX/Default:options to '-interaction=nonstopmode '%source''
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/PreviewLaTeX/Default:to to 'dvi'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/PreviewLaTeX/Default:type to 'Process'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/PreviewPDFLaTeX/Default:autoRun to 'no'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/PreviewPDFLaTeX/Default:checkForRoot to 'no'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/PreviewPDFLaTeX/Default:class to 'LaTeXpreview'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/PreviewPDFLaTeX/Default:command to 'pdflatex'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/PreviewPDFLaTeX/Default:from to ''
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/PreviewPDFLaTeX/Default:jumpToFirstError to 'yes'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/PreviewPDFLaTeX/Default:options to '-interaction=nonstopmode '%source''
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/PreviewPDFLaTeX/Default:to to 'pdf'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/PreviewPDFLaTeX/Default:type to 'Process'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tools:PreviewLaTeX to 'Default'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tools:PreviewPDFLaTeX to 'Default'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:ToolsGUI:PreviewLaTeX to 'none,none'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:ToolsGUI:PreviewPDFLaTeX to 'none,none'
+2013-05-21T18:53:30 kile.upd: Found new update 'Kile1.9v1'
+2013-05-21T18:53:30 kile.upd: Running script 'kile1.9_upd.pl'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/ViewBib/KBibTex:class to 'ViewBib'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/ViewBib/KBibTex:command to 'kbibtex'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/ViewBib/KBibTex:from to 'bib'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/ViewBib/KBibTex:options to ''%source''
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/ViewBib/KBibTex:to to 'bib'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/ViewBib/KBibTex:type to 'Process'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/ViewBib/KBibTex (embedded):class to 'ViewBib'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/ViewBib/KBibTex (embedded):className to 'KBibTeXPart'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/ViewBib/KBibTex (embedded):from to 'bib'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/ViewBib/KBibTex (embedded):libName to 'libkbibtexpart'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/ViewBib/KBibTex (embedded):liboptions to ''%source''
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/ViewBib/KBibTex (embedded):state to 'Viewer'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/ViewBib/KBibTex (embedded):to to 'bib'
+2013-05-21T18:53:30 kile.upd: Updating kilerc:Tool/ViewBib/KBibTex (embedded):type to 'Part'
+2013-05-21T18:53:30 kile.upd: Found new update 'Kile1.9v2'
+2013-05-21T18:53:30 kile.upd: Running script 'kile1.9-1_upd.pl'
+2013-05-21T18:53:31 kile.upd: Found new update 'Kile2.0v1'
+2013-05-21T18:53:31 kile.upd: Running script 'kile2.0-1_upd.pl'
+2013-05-21T18:53:31 kile.upd: Script removes group kilerc:Tool/Convert/eps2png
+2013-05-21T18:53:31 kile.upd: Script removes group kilerc:Tool/Convert/pdf2png
+2013-05-21T18:53:31 kile.upd: Script removes group kilerc:Tool/DVItoPNG/Default
+2013-05-21T18:53:31 kile.upd: Script removes group kilerc:Tool/DVItoPS/dvi2eps
+2013-05-21T18:53:31 kile.upd: Script removes kilerc:Tools:Convert
+2013-05-21T18:53:31 kile.upd: Script removes kilerc:Tools:DVItoPNG
+2013-05-21T18:53:31 kile.upd: Script removes kilerc:ToolsGUI:Convert
+2013-05-21T18:53:31 kile.upd: Script removes kilerc:ToolsGUI:DVItoPNG
+2013-05-21T18:53:31 kile.upd: Script removes kilerc:ToolsGUI:ViewBib
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Convert/eps2png:class to 'Convert'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Convert/eps2png:command to 'convert'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Convert/eps2png:ofrom to 'eps'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Convert/eps2png:options to '+adjoin -antialias -trim -transparent white -density %res '%S.eps' '%S.png''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Convert/eps2png:to to 'png'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Convert/eps2png:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Convert/pdf2png:class to 'Convert'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Convert/pdf2png:command to 'convert'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Convert/pdf2png:from to 'pdf'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Convert/pdf2png:options to '+adjoin -antialias -trim -transparent white -density %res '%S.pdf' '%S.png''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Convert/pdf2png:to to 'png'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Convert/pdf2png:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPNG/Default:class to 'Convert'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPNG/Default:command to 'dvipng'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPNG/Default:from to 'dvi'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPNG/Default:options to '-T tight -D %res -o '%S.png' '%S.dvi''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPNG/Default:to to 'png'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPNG/Default:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPS/dvi2eps:class to 'Convert'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPS/dvi2eps:command to 'dvips'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPS/dvi2eps:from to 'dvi'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPS/dvi2eps:options to '-o '%S.eps' '%S.dvi''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPS/dvi2eps:to to 'eps'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPS/dvi2eps:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tools:Convert to 'pdf2png'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tools:DVItoPNG to 'Default'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:ToolsGUI:Convert to 'Convert,convert'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:ToolsGUI:DVItoPNG to 'Convert,dvipng'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:ToolsGUI:ViewBib to 'View,viewbib'
+2013-05-21T18:53:31 kile.upd: Found new update 'Kile2.0v2'
+2013-05-21T18:53:31 kile.upd: Running script 'kile2.0-2_upd.pl'
+2013-05-21T18:53:31 kile.upd: Script removes group kilerc:Tool/Archive/Default
+2013-05-21T18:53:31 kile.upd: Script removes group kilerc:Tool/LaTeXtoHTML/latex2html
+2013-05-21T18:53:31 kile.upd: Script removes group kilerc:Tool/LaTeXtoHTML/TeX4ht
+2013-05-21T18:53:31 kile.upd: Script removes group kilerc:Tool/LaTeXtoDocBook/Default
+2013-05-21T18:53:31 kile.upd: Script removes kilerc:Tools:Archive
+2013-05-21T18:53:31 kile.upd: Script removes kilerc:Tools:LaTeXtoHTML
+2013-05-21T18:53:31 kile.upd: Script removes kilerc:Tools:LaTeXtoDocBook
+2013-05-21T18:53:31 kile.upd: Script removes kilerc:Tools:TeX4ht
+2013-05-21T18:53:31 kile.upd: Script removes kilerc:ToolsGUI:Archive
+2013-05-21T18:53:31 kile.upd: Script removes kilerc:ToolsGUI:LaTeXtoHTML
+2013-05-21T18:53:31 kile.upd: Script removes kilerc:ToolsGUI:LaTeXtoDocBook
+2013-05-21T18:53:31 kile.upd: Script removes kilerc:ToolsGUI:TeX
+2013-05-21T18:53:31 kile.upd: Script removes kilerc:ToolsGUI:PDFTeX
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Tar:class to 'Archive'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Tar:command to 'tar'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Tar:from to 'kilepr'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Tar:options to 'cvf '%S.tar' %AFL'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Tar:to to 'tar'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Tar:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Tar + bzip2:class to 'Archive'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Tar + bzip2:command to 'tar'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Tar + bzip2:from to 'kilepr'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Tar + bzip2:options to 'jcvf '%S.tar.bz2' %AFL'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Tar + bzip2:to to 'tar.bz2'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Tar + bzip2:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Tar + gzip:class to 'Archive'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Tar + gzip:command to 'tar'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Tar + gzip:from to 'kilepr'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Tar + gzip:options to 'zcvf '%S.tar.gz' %AFL'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Tar + gzip:to to 'tar.gz'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Tar + gzip:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Zip:class to 'Archive'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Zip:command to 'zip'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Zip:from to 'kilepr'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Zip:options to ''%S.zip' %AFL'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Zip:to to 'zip'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Archive/Zip:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to DVI:class to 'Compile'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to DVI:command to 'dblatex'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to DVI:from to 'xml'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to DVI:options to '-tdvi '%S.xml''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to DVI:to to 'dvi'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to DVI:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to LaTeX:class to 'Compile'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to LaTeX:command to 'dblatex'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to LaTeX:from to 'xml'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to LaTeX:options to '-ttex '%S.xml''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to LaTeX:to to 'tex'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to LaTeX:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to PDF:class to 'Compile'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to PDF:command to 'dblatex'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to PDF:from to 'xml'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to PDF:options to '-tpdf '%S.xml''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to PDF:to to 'pdf'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to PDF:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to Postscript:class to 'Compile'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to Postscript:command to 'dblatex'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to Postscript:from to 'xml'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to Postscript:options to '-tps '%S.xml''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to Postscript:to to 'ps'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DBLaTeX/Convert to Postscript:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPDF/Black and White:command to 'dvipdfm'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPDF/Black and White:from to 'dvi'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPDF/Black and White:options to '-c '%S.dvi''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPDF/Black and White:to to 'pdf'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPDF/Black and White:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPDF/Landscape:command to 'dvipdfm'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPDF/Landscape:from to 'dvi'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPDF/Landscape:options to '-l '%S.dvi''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPDF/Landscape:to to 'pdf'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPDF/Landscape:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/TeX4ht (LaTeX to HTML):class to 'Compile'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/TeX4ht (LaTeX to HTML):command to 'mk4ht'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/TeX4ht (LaTeX to HTML):from to 'tex'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/TeX4ht (LaTeX to HTML):options to 'htlatex '%source''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/TeX4ht (LaTeX to HTML):to to 'html'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/TeX4ht (LaTeX to HTML):type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/TeX4ht (LaTeX to MathML):class to 'Compile'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/TeX4ht (LaTeX to MathML):command to 'mk4ht'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/TeX4ht (LaTeX to MathML):from to 'tex'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/TeX4ht (LaTeX to MathML):options to 'xhmlatex '%source''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/TeX4ht (LaTeX to MathML):to to 'xml'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/TeX4ht (LaTeX to MathML):type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/TeX4ht (LaTeX to XML):class to 'Compile'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/TeX4ht (LaTeX to XML):command to 'mk4ht'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/TeX4ht (LaTeX to XML):from to 'tex'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/TeX4ht (LaTeX to XML):options to 'xhlatex '%source''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/TeX4ht (LaTeX to XML):to to 'xml'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/TeX4ht (LaTeX to XML):type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/latex2html:class to 'Compile'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/latex2html:command to 'latex2html'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/latex2html:from to 'tex'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/latex2html:options to ''%source''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/latex2html:to to 'html'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/LaTeX to Web/latex2html:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/DVI:class to 'Compile'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/DVI:command to 'lilypond'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/DVI:from to 'ly'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/DVI:options to '--dvi '%source''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/DVI:to to 'dvi'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/DVI:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/PDF:class to 'Compile'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/PDF:command to 'lilypond'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/PDF:from to 'ly'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/PDF:options to '--pdf '%source''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/PDF:to to 'pdf'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/PDF:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/PNG:class to 'Compile'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/PNG:command to 'lilypond'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/PNG:from to 'ly'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/PNG:options to '--png '%source''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/PNG:to to 'png'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/PNG:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/PS:class to 'Compile'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/PS:command to 'lilypond'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/PS:from to 'ly'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/PS:options to '--ps '%source''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/PS:to to 'ps'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/PS:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/TeX:class to 'Compile'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/TeX:command to 'lilypond'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/TeX:from to 'ly'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/TeX:options to '--tex '%source''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/TeX:to to 'tex'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Lilypond/TeX:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/QuickBuild/LaTeX:class to 'Sequence'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/QuickBuild/LaTeX:sequence to 'LaTeX'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/QuickBuild/LaTeX:type to 'Sequence'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/ViewBib/JabRef:class to 'ViewBib'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/ViewBib/JabRef:command to 'jabref'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/ViewBib/JabRef:from to 'bib'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/ViewBib/JabRef:options to ''%source''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/ViewBib/JabRef:to to 'bib'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/ViewBib/JabRef:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/ViewBib/KBib:class to 'ViewBib'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/ViewBib/KBib:command to 'kbib'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/ViewBib/KBib:from to 'bib'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/ViewBib/KBib:options to ''%source''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/ViewBib/KBib:to to 'bib'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/ViewBib/KBib:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/ViewBib/gbib:class to 'ViewBib'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/ViewBib/gbib:command to 'gbib'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/ViewBib/gbib:from to 'bib'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/ViewBib/gbib:options to ''%source''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/ViewBib/gbib:to to 'bib'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/ViewBib/gbib:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tools:Archive to 'Tar + gzip'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tools:DBLaTeX to 'Convert to LaTeX'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tools:LaTeX to Web to 'latex2html'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tools:Lilypond to 'PDF'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:ToolsGUI:Archive to 'Archive,package'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:ToolsGUI:DBLaTeX to 'Compile,dblatex'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:ToolsGUI:LaTeX to Web to 'Compile,l2h'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:ToolsGUI:Lilypond to 'Compile,lilypond'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:ToolsGUI:PDFTeX to 'Compile,pdftex'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:ToolsGUI:TeX to 'Compile,texcompiler'
+2013-05-21T18:53:31 kile.upd: Found new update 'Kile2.0v3'
+2013-05-21T18:53:31 kile.upd: Running script 'kile2.0-3_upd.pl'
+2013-05-21T18:53:31 kile.upd: Found new update 'Kile2.0v4'
+2013-05-21T18:53:31 kile.upd: Running script 'kile2.0-4_upd.pl'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Asymptote/Default:class to 'Compile'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Asymptote/Default:command to 'asy'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Asymptote/Default:from to ''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Asymptote/Default:options to ''%S''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Asymptote/Default:to to ''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/Asymptote/Default:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/BibTeX/8bitVersion:class to 'Compile'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/BibTeX/8bitVersion:command to 'bibtex8'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/BibTeX/8bitVersion:from to 'aux'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/BibTeX/8bitVersion:options to ''%S''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/BibTeX/8bitVersion:to to 'bbl'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/BibTeX/8bitVersion:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/PDFLaTeX/Draft:autoRun to 'yes'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/PDFLaTeX/Draft:checkForRoot to 'yes'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/PDFLaTeX/Draft:class to 'LaTeX'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/PDFLaTeX/Draft:command to 'pdflatex'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/PDFLaTeX/Draft:from to ''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/PDFLaTeX/Draft:jumpToFirstError to 'yes'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/PDFLaTeX/Draft:options to '-draftmode-interaction=nonstopmode'%source''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/PDFLaTeX/Draft:to to 'pdf'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/PDFLaTeX/Draft:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/PDFTeX/Draft:class to 'Compile'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/PDFTeX/Draft:command to 'pdftex'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/PDFTeX/Draft:from to ''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/PDFTeX/Draft:options to '-draftmode-interaction=nonstopmode'%source''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/PDFTeX/Draft:to to 'pdf'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/PDFTeX/Draft:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tools:Asymptote to 'Default'
+2013-05-21T18:53:31 kile.upd: Found new update 'Kile2.0v5'
+2013-05-21T18:53:31 kile.upd: Running script 'kile2.0-5_upd.pl'
+2013-05-21T18:53:31 kile.upd: Script removes kilerc:Tools:DVItoPDF
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPDF/Modern:class to 'Convert'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPDF/Modern:command to 'dvipdfmx'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPDF/Modern:from to 'dvi'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPDF/Modern:options to ''%S.dvi''
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPDF/Modern:to to 'pdf'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tool/DVItoPDF/Modern:type to 'Process'
+2013-05-21T18:53:31 kile.upd: Updating kilerc:Tools:DVItoPDF to 'Modern'
+2013-05-21T18:53:31 Checking update-file '/usr/share/apps/kconf_update/ksmserver.upd' for new updates
+2013-05-21T18:53:31 ksmserver.upd: Found new update 'kde3'
+2013-05-21T18:53:31 ksmserver.upd: Running script 'move_session_config.sh'
+2013-05-21T18:53:31 Checking update-file '/usr/share/apps/kconf_update/kuriikwsfilter.upd' for new updates
+2013-05-21T18:53:31 kuriikwsfilter.upd: Found new update 'post-kde3.1/cvs'
+2013-05-21T18:53:31 Checking update-file '/usr/share/apps/kconf_update/kmail.upd' for new updates
+2013-05-21T18:53:31 kmail.upd: Found new update '1'
+2013-05-21T18:53:31 kmail.upd: Running script 'upgrade-transport.pl'
+2013-05-21T18:53:31 kmail.upd: Script removes kmailrc:sending mail:Mailer
+2013-05-21T18:53:31 kmail.upd: Script removes kmailrc:sending mail:Method
+2013-05-21T18:53:31 kmail.upd: Script removes kmailrc:sending mail:Precommand
+2013-05-21T18:53:31 kmail.upd: Script removes kmailrc:sending mail:Smtp Host
+2013-05-21T18:53:31 kmail.upd: Script removes kmailrc:sending mail:Smtp Password
+2013-05-21T18:53:31 kmail.upd: Script removes kmailrc:sending mail:Smtp Port
+2013-05-21T18:53:31 kmail.upd: Script removes kmailrc:sending mail:Smtp Username
+2013-05-21T18:53:31 kmail.upd: Found new update '4'
+2013-05-21T18:53:31 kmail.upd: Found new update '5'
+2013-05-21T18:53:31 kmail.upd: Found new update '6'
+2013-05-21T18:53:32 kmail.upd: Found new update '7'
+2013-05-21T18:53:32 kmail.upd: Found new update '8'
+2013-05-21T18:53:32 kmail.upd: Running script 'kmail-pgpidentity.pl'
+2013-05-21T18:53:32 kmail.upd: Found new update '9'
+2013-05-21T18:53:32 kmail.upd: Running script 'upgrade-signature.pl'
+2013-05-21T18:53:32 kmail.upd: Found new update '3.1-update-identities'
+2013-05-21T18:53:32 kmail.upd: Running script 'kmail-upd-identities.pl'
+2013-05-21T18:53:32 kmail.upd: Found new update '3.1-use-identity-uoids'
+2013-05-21T18:53:32 kmail.upd: Running script 'kmail-3.1-use-UOID-for-identities.pl'
+2013-05-21T18:53:32 [Script] Use of uninitialized value in hash element at /usr/share/apps/kconf_update/kmail-3.1-use-UOID-for-identities.pl line 45, <> line 7.
+2013-05-21T18:53:32 [Script] Use of uninitialized value in concatenation (.) or string at /usr/share/apps/kconf_update/kmail-3.1-use-UOID-for-identities.pl line 45, <> line 7.
+2013-05-21T18:53:32 [Script] Use of uninitialized value in hash element at /usr/share/apps/kconf_update/kmail-3.1-use-UOID-for-identities.pl line 49, <> line 7.
+2013-05-21T18:53:32 [Script] Use of uninitialized value in concatenation (.) or string at /usr/share/apps/kconf_update/kmail-3.1-use-UOID-for-identities.pl line 49, <> line 7.
+2013-05-21T18:53:32 kmail.upd: Script removes kmailrc:General:Default Identity
+2013-05-21T18:53:32 kmail.upd: Script removes kmailrc:Composer:previous-identity
+2013-05-21T18:53:32 kmail.upd: Updating kmailrc:Composer:previous-identity to ''
+2013-05-21T18:53:32 kmail.upd: Updating kmailrc:General:Default Identity to ''
+2013-05-21T18:53:32 kmail.upd: Found new update '3.1-new-mail-notification'
+2013-05-21T18:53:32 kmail.upd: Running script 'kmail-3.1-update-new-mail-notification-settings.pl'
+2013-05-21T18:53:32 kmail.upd: Script removes kmailrc:General:msgbox-on-mail
+2013-05-21T18:53:32 kmail.upd: Script removes kmailrc:General:exec-on-mail
+2013-05-21T18:53:32 kmail.upd: Script removes kmailrc:General:exec-on-mail-cmd
+2013-05-21T18:53:32 kmail.upd: Found new update '3.2-update-loop-on-goto-unread-settings'
+2013-05-21T18:53:32 kmail.upd: Running script 'kmail-3.2-update-loop-on-goto-unread-settings.sh'
+2013-05-21T18:53:32 kmail.upd: Found new update '3.1.4-dont-use-UOID-0-for-any-identity'
+2013-05-21T18:53:32 kmail.upd: Running script 'kmail-3.1.4-dont-use-UOID-0-for-any-identity.pl'
+2013-05-21T18:53:32 kmail.upd: Found new update '3.2-misc'
+2013-05-21T18:53:32 kmail.upd: Running script 'kmail-3.2-misc.sh'
+2013-05-21T18:53:32 kmail.upd: Found new update '3.2-moves'
+2013-05-21T18:53:32 kmail.upd: Found new update '3.3-use-ID-for-accounts'
+2013-05-21T18:53:32 kmail.upd: Running script 'kmail-3.3-use-ID-for-accounts.pl'
+2013-05-21T18:53:32 kmail.upd: Found new update '3.3-update-filter-rules'
+2013-05-21T18:53:32 kmail.upd: !! Script 'kmail-3.3-update-filter-rules.pl' not found in line 99 : 'Script=kmail-3.3-update-filter-rules.pl,perl'
+2013-05-21T18:53:32 kmail.upd: Found new update '3.3-move-identities-to-own-file'
+2013-05-21T18:53:32 kmail.upd: Running script 'kmail-3.3-move-identities.pl'
+2013-05-21T18:53:32 kmail.upd: Script removes kmailrc:General:Default Identity
+2013-05-21T18:53:32 kmail.upd: Updating emailidentities:General:Default Identity to ''
+2013-05-21T18:53:32 kmail.upd: Found new update '3.3-aegypten-kpgprc-to-kmailrc'
+2013-05-21T18:53:32 kmail.upd: Found new update '3.3-aegypten-kpgprc-to-libkleopatrarc'
+2013-05-21T18:53:32 kmail.upd: Running script 'kmail-3.3-aegypten.pl'
+2013-05-21T18:53:33 kmail.upd: Found new update '3.3-aegypten-emailidentities-split-sign-encr-keys'
+2013-05-21T18:53:33 kmail.upd: Running script 'kmail-3.3-split-sign-encr-keys.sh'
+2013-05-21T18:53:33 kmail.upd: Found new update '3.3-misc'
+2013-05-21T18:53:33 kmail.upd: Running script 'kmail-3.3-misc.pl'
+2013-05-21T18:53:33 kmail.upd: Found new update '3.3b1-misc'
+2013-05-21T18:53:33 kmail.upd: Running script 'kmail-3.3b1-misc.pl'
+2013-05-21T18:53:33 kmail.upd: Found new update '3.4'
+2013-05-21T18:53:33 kmail.upd: Running script 'kmail-3.4-misc.pl'
+2013-05-21T18:53:33 kmail.upd: Found new update '3.4a'
+2013-05-21T18:53:33 kmail.upd: Found new update '3.4b'
+2013-05-21T18:53:33 kmail.upd: Found new update '3.4.1'
+2013-05-21T18:53:33 kmail.upd: Running script 'kmail-3.4.1-update-status-filters.pl'
+2013-05-21T18:53:33 kmail.upd: Found new update '3.5.4'
+2013-05-21T18:53:33 Checking update-file '/usr/share/apps/kconf_update/kcalcrc.upd' for new updates
+2013-05-21T18:53:33 kcalcrc.upd: Found new update 'KDE_3_2_0'
+2013-05-21T18:53:33 Checking update-file '/usr/share/apps/kconf_update/kpgp.upd' for new updates
+2013-05-21T18:53:33 kpgp.upd: Found new update 'preKDE3_a'
+2013-05-21T18:53:33 kpgp.upd: Found new update '3.1-1'
+2013-05-21T18:53:33 kpgp.upd: Running script 'kpgp-3.1-upgrade-address-data.pl'
+2013-05-21T18:53:33 kpgp.upd: Script removes kpgprc:General:addressKeyEntries
+2013-05-21T18:53:33 kpgp.upd: Script removes kpgprc:General:addressEntries
+2013-05-21T18:53:33 kpgp.upd: Updating kpgprc:General:addressEntries to '0'
+2013-05-21T18:53:33 Checking update-file '/usr/share/apps/kconf_update/kdev-gen-settings.upd' for new updates
+2013-05-21T18:53:33 kdev-gen-settings.upd: Found new update 'kdev-gen-settings-update/5'
+2013-05-21T18:53:33 kdev-gen-settings.upd: Running script 'kdev-gen-settings-kconf_update'
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:AStyle:Brackets, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:AStyle:Fill, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:AStyle:FillSpaces, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:AStyle:IndentBrackets, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:AStyle:IndentCases, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:AStyle:IndentClasses, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:AStyle:IndentLabels, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:AStyle:IndentNamespaces, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:AStyle:IndentSwitches, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:AStyle:KeepBlocks, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:AStyle:KeepStatements, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:AStyle:MaxStatement, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:AStyle:MinConditional, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:AStyle:PadOperators, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:AStyle:PadParentheses, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:AStyle:Style, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Editor:EmbeddedKTextEditor, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:General Options:Read Last Project On Startup, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Kate View Defaults:Icon Bar, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow:Height 768, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow:Width 1024, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar QextMdiTaskBar:Hidden, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar QextMdiTaskBar:IconSize, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar QextMdiTaskBar:IconText, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar QextMdiTaskBar:Index, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar QextMdiTaskBar:NewLine, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar QextMdiTaskBar:Offset, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar QextMdiTaskBar:Position, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar browserToolBar:Hidden, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar browserToolBar:IconSize, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar browserToolBar:IconText, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar browserToolBar:Index, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar browserToolBar:NewLine, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar browserToolBar:Offset, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar browserToolBar:Position, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar mainToolBar:Hidden, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar mainToolBar:IconSize, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar mainToolBar:IconText, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar mainToolBar:Index, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar mainToolBar:NewLine, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar mainToolBar:Offset, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Mainwindow Toolbar mainToolBar:Position, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:Plugins:KDevScripting, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:UI:CloseOnHover, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:UI:CloseOnHoverDelay, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:UI:MDIMode, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:UI:MDIStyle, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:UI:OpenNewTabAfterCurrent, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:UI:ShowCloseTabsButton, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:UI:ShowTabIcons, already exists.
+2013-05-21T18:53:33 kdev-gen-settings.upd: Skipping kdeveloprc:UI:TabVisibility, already exists.
+2013-05-21T18:53:33 Checking update-file '/usr/share/apps/kconf_update/kate-2.4.upd' for new updates
+2013-05-21T18:53:33 kate-2.4.upd: Found new update 'kate2.4'
+2013-05-21T18:53:33 Checking update-file '/usr/share/apps/kconf_update/kwin_focus1.upd' for new updates
+2013-05-21T18:53:33 kwin_focus1.upd: Found new update 'kwin_focus1'
+2013-05-21T18:53:33 kwin_focus1.upd: Running script 'kwin_focus1.sh'
+2013-05-21T18:53:33 kwin_focus1.upd: Updating kwinrc:Windows:AutoRaise to 'off'
+2013-05-21T18:53:33 kwin_focus1.upd: Updating kwinrc:Windows:AutoRaiseInterval to '0'
+2013-05-21T18:53:33 kwin_focus1.upd: Updating kwinrc:Windows:BorderSnapZone to '10'
+2013-05-21T18:53:33 kwin_focus1.upd: Updating kwinrc:Windows:ClickRaise to 'on'
+2013-05-21T18:53:33 kwin_focus1.upd: Updating kwinrc:Windows:FocusPolicy to 'ClickToFocus'
+2013-05-21T18:53:33 kwin_focus1.upd: Updating kwinrc:Windows:IgnoreFocusStealingClasses to 'kio_uiserver'
+2013-05-21T18:53:33 kwin_focus1.upd: Updating kwinrc:Windows:MoveMode to 'Opaque'
+2013-05-21T18:53:33 kwin_focus1.upd: Updating kwinrc:Windows:ResizeMode to 'Opaque'
+2013-05-21T18:53:33 kwin_focus1.upd: Updating kwinrc:Windows:TitlebarDoubleClickCommand to 'Maximize'
+2013-05-21T18:53:33 kwin_focus1.upd: Updating kwinrc:Windows:WindowSnapZone to '10'
+2013-05-21T18:53:33 kwin_focus1.upd: Updating kwinrc:Windows:WindowsPlacement to 'Smart'
+2013-05-21T18:53:33 Checking update-file '/usr/share/apps/kconf_update/kpalmdoc.upd' for new updates
+2013-05-21T18:53:33 kpalmdoc.upd: Found new update 'kdepim_3.3'
+2013-05-21T18:53:34 Checking update-file '/usr/share/apps/kconf_update/kghostview.upd' for new updates
+2013-05-21T18:53:34 kghostview.upd: Found new update '1changeToKConfigXT'
+2013-05-21T18:53:34 kghostview.upd: Found new update '2changeToKConfigXT'
+2013-05-21T18:53:34 kghostview.upd: Running script 'update-to-xt-names.pl'
+2013-05-21T18:53:34 Checking update-file '/usr/share/apps/kconf_update/kaudiocreator-libkcddb.upd' for new updates
+2013-05-21T18:53:34 kaudiocreator-libkcddb.upd: Found new update 'kaudiocreator-libkcddb'
+2013-05-21T18:53:34 Checking update-file '/usr/share/apps/kconf_update/socks.upd' for new updates
+2013-05-21T18:53:34 socks.upd: Found new update 'kde3.0/r1'
+2013-05-21T18:53:34 Checking update-file '/usr/share/apps/kconf_update/kcmcddb-emailsettings.upd' for new updates
+2013-05-21T18:53:34 kcmcddb-emailsettings.upd: Found new update 'kcmcddb_emailsettings'
+2013-05-21T18:53:34 Checking update-file '/usr/share/apps/kconf_update/kcharselect.upd' for new updates
+2013-05-21T18:53:34 kcharselect.upd: Found new update '1'
+2013-05-21T18:53:34 Checking update-file '/usr/share/apps/kconf_update/kbabel-projectrename.upd' for new updates
+2013-05-21T18:53:34 kbabel-projectrename.upd: Found new update 'kde34'
+2013-05-21T18:53:34 kbabel-projectrename.upd: parse error in line 4 : 'Author-Email,AuthorEmail'
+2013-05-21T18:53:34 kbabel-projectrename.upd: parse error in line 5 : 'Author-Name,AuthorName'
+2013-05-21T18:53:34 kbabel-projectrename.upd: parse error in line 6 : 'Local-Author-Name,LocalAuthorName'
+2013-05-21T18:53:34 kbabel-projectrename.upd: parse error in line 7 : 'Update-Charset,UpdateCharset'
+2013-05-21T18:53:34 kbabel-projectrename.upd: parse error in line 8 : 'Update-Encoding,UpdateEncoding'
+2013-05-21T18:53:34 kbabel-projectrename.upd: parse error in line 9 : 'Update-Language-Team,UpdateLanguageTeam'
+2013-05-21T18:53:34 kbabel-projectrename.upd: parse error in line 10 : 'Update-Last-Translator,UpdateLastTranslator'
+2013-05-21T18:53:34 kbabel-projectrename.upd: parse error in line 11 : 'Update-Project,UpdateProject'
+2013-05-21T18:53:34 kbabel-projectrename.upd: parse error in line 12 : 'Update-Revision,UpdateRevision'
+2013-05-21T18:53:34 Checking update-file '/usr/share/apps/kconf_update/kded.upd' for new updates
+2013-05-21T18:53:34 kded.upd: Found new update 'kde3.0'
+2013-05-21T18:53:34 Checking update-file '/usr/share/apps/kconf_update/kdeprintrc.upd' for new updates
+2013-05-21T18:53:34 kdeprintrc.upd: Found new update 'kde-3.1-toolbar'
+2013-05-21T18:53:34 kdeprintrc.upd: Skipping kdeprintrc:General:ViewMenuBar, already exists.
+2013-05-21T18:53:34 kdeprintrc.upd: RemoveKey removes kdeprintrc:General:ViewToolBar
+2013-05-21T18:53:34 Checking update-file '/usr/share/apps/kconf_update/cervisia.upd' for new updates
+2013-05-21T18:53:34 cervisia.upd: Found new update 'kde3.2/20021228'
+2013-05-21T18:53:34 cervisia.upd: Found new update 'kde3.2/20021229'
+2013-05-21T18:53:34 cervisia.upd: Running script 'move_repositories.pl'
+2013-05-21T18:53:34 cervisia.upd: Found new update 'kde3.2/20030116'
+2013-05-21T18:53:35 cervisia.upd: Found new update 'kde3.2/20030117'
+2013-05-21T18:53:35 cervisia.upd: Found new update 'kde3.2/20030118'
+2013-05-21T18:53:35 cervisia.upd: Skipping update 'kde3.2/20030118'
+2013-05-21T18:53:35 cervisia.upd: Found new update 'kde3.2/20030205'
+2013-05-21T18:53:35 cervisia.upd: Found new update 'kde3.2/20030210'
+2013-05-21T18:53:35 cervisia.upd: Found new update 'kde3.2/20030211'
+2013-05-21T18:53:35 cervisia.upd: Found new update 'kde3.2/20030212'
+2013-05-21T18:53:35 cervisia.upd: Found new update 'kde3.2/20030216'
+2013-05-21T18:53:35 cervisia.upd: Found new update 'kde3.2/20030725'
+2013-05-21T18:53:35 cervisia.upd: Found new update 'kde3.2/20030730'
+2013-05-21T18:53:35 cervisia.upd: Running script 'change_colors.pl'
+2013-05-21T18:53:35 cervisia.upd: Found new update 'kde3.2/20030829'
+2013-05-21T18:53:35 cervisia.upd: Found new update 'kde3.2/20031014'
+2013-05-21T18:53:35 cervisia.upd: Found new update 'kde3.4/20041112'
+2013-05-21T18:53:35 cervisia.upd: Running script 'cervisia-normalize_cvsroot.pl'
+2013-05-21T18:53:35 cervisia.upd: Found new update 'kde3.4/20041207'
+2013-05-21T18:53:35 cervisia.upd: Running script 'cervisia-change_repos_list.pl'
+2013-05-21T18:53:35 Checking update-file '/usr/share/apps/kconf_update/korn-3-5-update.upd' for new updates
+2013-05-21T18:53:35 korn-3-5-update.upd: Found new update 'korn-3-5-ssl-update'
+2013-05-21T18:53:35 korn-3-5-update.upd: Running script 'korn-3-5-ssl-update.pl'
+2013-05-21T18:53:35 korn-3-5-update.upd: Found new update 'korn-3-5-metadata-update'
+2013-05-21T18:53:35 korn-3-5-update.upd: Running script 'korn-3-5-metadata-update.pl'
+2013-05-21T18:53:35 Checking update-file '/usr/share/apps/kconf_update/kaudiocreator-meta.upd' for new updates
+2013-05-21T18:53:35 kaudiocreator-meta.upd: Found new update '3'
+2013-05-21T18:53:35 kaudiocreator-meta.upd: Running script 'upgrade-kaudiocreator-metadata.sh'
+2013-05-21T18:53:35 Checking update-file '/usr/share/apps/kconf_update/khotkeys_32b1_update.upd' for new updates
+2013-05-21T18:53:35 khotkeys_32b1_update.upd: Found new update 'kde32b1'
+2013-05-21T18:53:35 khotkeys_32b1_update.upd: Running script 'khotkeys_update' with arguments '--id kde32b1'
+2013-05-21T18:53:51 Checking update-file '/usr/share/apps/kconf_update/kwin_fsp_workarounds_1.upd' for new updates
+2013-05-21T18:53:51 kwin_fsp_workarounds_1.upd: Found new update 'kde351'
+2013-05-21T18:53:51 kwin_fsp_workarounds_1.upd: Running script 'kwin_update_default_rules' with arguments 'fsp_workarounds_1'
+2013-05-21T18:53:51 Checking update-file '/usr/share/apps/kconf_update/kio_help.upd' for new updates
+2013-05-21T18:53:51 kio_help.upd: Found new update 'kde3_2'
+2013-05-21T18:53:51 kio_help.upd: Running script 'move_kio_help_cache.sh'
+2013-05-21T18:53:51 [Script] mv: cannot stat `/home/bulacarl/.kde/share/apps/kio_help/cache': No such file or directory
+2013-05-21T18:53:51 [Script] rmdir: /home/bulacarl/.kde/share/apps/kio_help: No such file or directory
+2013-05-21T18:53:51 Checking update-file '/usr/share/apps/kconf_update/klippershortcuts.upd' for new updates
+2013-05-21T18:53:51 klippershortcuts.upd: Found new update '04112002'
+2013-05-21T18:53:51 Checking update-file '/usr/share/apps/kconf_update/kbabel-project.upd' for new updates
+2013-05-21T18:53:51 kbabel-project.upd: Found new update 'kde33'
+2013-05-21T18:53:51 Checking update-file '/usr/share/apps/kconf_update/favicons.upd' for new updates
+2013-05-21T18:53:51 favicons.upd: Found new update 'kde3_2'
+2013-05-21T18:53:51 favicons.upd: Running script 'move_favicons.sh'
+2013-05-21T18:53:51 Checking update-file '/usr/share/apps/kconf_update/kwin_focus2.upd' for new updates
+2013-05-21T18:53:51 kwin_focus2.upd: Found new update 'kwin_focus2'
+2013-05-21T18:53:51 kwin_focus2.upd: Running script 'kwin_focus2.sh'
+2013-05-21T18:53:51 kwin_focus2.upd: Updating kwinrc:Windows:AutoRaise to 'off'
+2013-05-21T18:53:51 kwin_focus2.upd: Updating kwinrc:Windows:AutoRaiseInterval to '0'
+2013-05-21T18:53:51 kwin_focus2.upd: Updating kwinrc:Windows:BorderSnapZone to '10'
+2013-05-21T18:53:51 kwin_focus2.upd: Updating kwinrc:Windows:ClickRaise to 'on'
+2013-05-21T18:53:51 kwin_focus2.upd: Updating kwinrc:Windows:FocusPolicy to 'ClickToFocus'
+2013-05-21T18:53:51 kwin_focus2.upd: Updating kwinrc:Windows:IgnoreFocusStealingClasses to 'kio_uiserver'
+2013-05-21T18:53:51 kwin_focus2.upd: Updating kwinrc:Windows:MoveMode to 'Opaque'
+2013-05-21T18:53:51 kwin_focus2.upd: Updating kwinrc:Windows:ResizeMode to 'Opaque'
+2013-05-21T18:53:51 kwin_focus2.upd: Updating kwinrc:Windows:TitlebarDoubleClickCommand to 'Maximize'
+2013-05-21T18:53:51 kwin_focus2.upd: Updating kwinrc:Windows:WindowSnapZone to '10'
+2013-05-21T18:53:51 kwin_focus2.upd: Updating kwinrc:Windows:WindowsPlacement to 'Smart'
+2016-02-11T15:05:20 Checking update-file '/usr/share/apps/kconf_update/kpalmdoc.upd' for new updates
+2016-02-11T15:05:20 Checking update-file '/usr/share/apps/kconf_update/kopete-jabberproxytype-kconf_update.upd' for new updates
+2016-02-11T15:05:20 Checking update-file '/usr/share/apps/kconf_update/kghostview.upd' for new updates
+2016-02-11T15:05:20 Checking update-file '/usr/share/apps/kconf_update/kwin3_plugin.upd' for new updates
+2016-02-11T15:05:20 Checking update-file '/usr/share/apps/kconf_update/konqueror_gestures_kde321_update.upd' for new updates
+2016-02-11T15:05:21 Checking update-file '/usr/share/apps/kconf_update/kopete-jabberpriorityaddition-kconf_update.upd' for new updates
+2016-02-11T15:05:21 Checking update-file '/usr/share/apps/kconf_update/favicons.upd' for new updates
+2016-02-11T15:05:21 Checking update-file '/usr/share/apps/kconf_update/kwin_focus2.upd' for new updates
+2016-02-11T15:05:21 Checking update-file '/usr/share/apps/kconf_update/kile.upd' for new updates
+2016-02-11T15:05:21 Checking update-file '/usr/share/apps/kconf_update/audiocd.upd' for new updates
+2016-02-11T15:05:21 Checking update-file '/usr/share/apps/kconf_update/kwiniconify.upd' for new updates
+2016-02-11T15:05:22 Checking update-file '/usr/share/apps/kconf_update/kcmdisplayrc.upd' for new updates
+2016-02-11T15:05:22 Checking update-file '/usr/share/apps/kconf_update/kdev-gen-settings.upd' for new updates
+2016-02-11T15:05:22 Checking update-file '/usr/share/apps/kconf_update/kopete-pluginloader2.upd' for new updates
+2016-02-11T15:05:22 Checking update-file '/usr/share/apps/kconf_update/kwin_fsp_workarounds_1.upd' for new updates
+2016-02-11T15:05:22 Checking update-file '/usr/share/apps/kconf_update/korn-3-4-config_change.upd' for new updates
+2016-02-11T15:05:22 Checking update-file '/usr/share/apps/kconf_update/kwin_focus1.upd' for new updates
+2016-02-11T15:05:23 Checking update-file '/usr/share/apps/kconf_update/kbabel-difftoproject.upd' for new updates
+2016-02-11T15:05:23 Checking update-file '/usr/share/apps/kconf_update/kwinsticky.upd' for new updates
+2016-02-11T15:05:23 Checking update-file '/usr/share/apps/kconf_update/kcalcrc.upd' for new updates
+2016-02-11T15:05:23 Checking update-file '/usr/share/apps/kconf_update/kcharselect.upd' for new updates
+2016-02-11T15:05:24 Checking update-file '/usr/share/apps/kconf_update/konqsidebartng.upd' for new updates
+2016-02-11T15:05:24 Checking update-file '/usr/share/apps/kconf_update/kded.upd' for new updates
+2016-02-11T15:05:24 Checking update-file '/usr/share/apps/kconf_update/cervisia.upd' for new updates
+2016-02-11T15:05:24 cervisia.upd: Found new update 'kde3.2/20030118'
+2016-02-11T15:05:24 cervisia.upd: Skipping update 'kde3.2/20030118'
+2016-02-11T15:05:24 Checking update-file '/usr/share/apps/kconf_update/khotkeys_printscreen.upd' for new updates
+2016-02-11T15:05:24 Checking update-file '/usr/share/apps/kconf_update/kio_help.upd' for new updates
+2016-02-11T15:05:24 Checking update-file '/usr/share/apps/kconf_update/ksmserver.upd' for new updates
+2016-02-11T15:05:24 Checking update-file '/usr/share/apps/kconf_update/kcookiescfg.upd' for new updates
+2016-02-11T15:05:25 Checking update-file '/usr/share/apps/kconf_update/kickerrc.upd' for new updates
+2016-02-11T15:05:25 Checking update-file '/usr/share/apps/kconf_update/socks.upd' for new updates
+2016-02-11T15:05:25 Checking update-file '/usr/share/apps/kconf_update/klipperrc.upd' for new updates
+2016-02-11T15:05:25 Checking update-file '/usr/share/apps/kconf_update/kuriikwsfilter.upd' for new updates
+2016-02-11T15:05:25 Checking update-file '/usr/share/apps/kconf_update/noatun.upd' for new updates
+2016-02-11T15:05:25 Checking update-file '/usr/share/apps/kconf_update/kaudiocreator-meta.upd' for new updates
+2016-02-11T15:05:25 Checking update-file '/usr/share/apps/kconf_update/kaudiocreator-libkcddb.upd' for new updates
+2016-02-11T15:05:26 Checking update-file '/usr/share/apps/kconf_update/kmail.upd' for new updates
+2016-02-11T15:05:26 kmail.upd: Found new update '3.3-update-filter-rules'
+2016-02-11T15:05:26 kmail.upd: Skipping update '3.3-update-filter-rules'
+2016-02-11T15:05:26 Checking update-file '/usr/share/apps/kconf_update/kioslave.upd' for new updates
+2016-02-11T15:05:26 kioslave.upd: Found new update 'kde2.2/r1'
+2016-02-11T15:05:26 kioslave.upd: Skipping update 'kde2.2/r1'
+2016-02-11T15:05:26 Checking update-file '/usr/share/apps/kconf_update/kbabel-projectrename.upd' for new updates
+2016-02-11T15:05:26 Checking update-file '/usr/share/apps/kconf_update/kopete-nameTracking.upd' for new updates
+2016-02-11T15:05:26 Checking update-file '/usr/share/apps/kconf_update/korganizer.upd' for new updates
+2016-02-11T15:05:26 Checking update-file '/usr/share/apps/kconf_update/kopete-account-kconf_update.upd' for new updates
+2016-02-11T15:05:27 Checking update-file '/usr/share/apps/kconf_update/kopete-pluginloader.upd' for new updates
+2016-02-11T15:05:27 Checking update-file '/usr/share/apps/kconf_update/kwinupdatewindowsettings.upd' for new updates
+2016-02-11T15:05:27 Checking update-file '/usr/share/apps/kconf_update/konsole.upd' for new updates
+2016-02-11T15:05:27 Checking update-file '/usr/share/apps/kconf_update/kbabel-project.upd' for new updates
+2016-02-11T15:05:27 Checking update-file '/usr/share/apps/kconf_update/kcmcddb-emailsettings.upd' for new updates
+2016-02-11T15:05:27 Checking update-file '/usr/share/apps/kconf_update/kdeprintrc.upd' for new updates
+2016-02-11T15:05:27 Checking update-file '/usr/share/apps/kconf_update/kpgp.upd' for new updates
+2016-02-11T15:05:27 Checking update-file '/usr/share/apps/kconf_update/klippershortcuts.upd' for new updates
+2016-02-11T15:05:27 Checking update-file '/usr/share/apps/kconf_update/korn-3-5-update.upd' for new updates
+2016-02-11T15:05:28 Checking update-file '/usr/share/apps/kconf_update/kfmclient_3_2.upd' for new updates
+2016-02-11T15:05:28 Checking update-file '/usr/share/apps/kconf_update/kpilot.upd' for new updates
+2016-02-11T15:05:28 kpilot.upd: Found new update 'kdepim_3.3_SplitConfig'
+2016-02-11T15:05:28 kpilot.upd: Skipping update 'kdepim_3.3_SplitConfig'
+2016-02-11T15:05:28 Checking update-file '/usr/share/apps/kconf_update/kwin.upd' for new updates
+2016-02-11T15:05:28 Checking update-file '/usr/share/apps/kconf_update/kaccel.upd' for new updates
+2016-02-11T15:05:29 Checking update-file '/usr/share/apps/kconf_update/khotkeys_32b1_update.upd' for new updates
+2016-02-11T15:05:29 Checking update-file '/usr/share/apps/kconf_update/kate-2.4.upd' for new updates
+2016-02-11T15:05:29 Checking update-file '/usr/share/apps/kconf_update/mouse_cursor_theme.upd' for new updates
+2016-02-11T15:05:29 Checking update-file '/usr/share/apps/kconf_update/knewsticker.upd' for new updates
